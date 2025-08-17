@@ -8,7 +8,6 @@
   margin: auto;
 }
 
-
 .jpz-mytw-page-wrapper {
   display: flex;
   justify-content: center;     
@@ -18,7 +17,6 @@
   height: 100%;         
   box-sizing: border-box;
 }
-
 
 .jpz-mytw-window-header {
   background: #686868;
@@ -32,7 +30,6 @@
   box-sizing: border-box;
 }
 
-
 .jpz-mytw-window-close {
   background: #fff;
   color: #000;
@@ -45,14 +42,12 @@
   align-items: center;
 }
 
-
 .jpz-mytw-window-title {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 500;
   font-size: 20px;
   padding: 6px;
 }
-
 
 .jpz-mytw-center-image {
   width: 100%;
@@ -61,7 +56,6 @@
   object-fit: cover;
   display: block;
 }
-
 
 .jpz-mytw-text-box {
   max-width: 796px;
@@ -77,7 +71,6 @@
   box-sizing: border-box;
 }
 
-
 .jpz-mytw-container {
   display: grid;
   width: clamp(80%, calc(100% - 60%), 385px);
@@ -88,7 +81,6 @@
   box-sizing: border-box;
 }
 
-
 .jpz-mytw-npc-box {
   width: 100%;
   max-width: 385px;
@@ -96,7 +88,6 @@
   background: #d9d9d9;
   box-sizing: border-box;
 }
-
 
 .jpz-mytw-npc-header {
   background: #686868;
@@ -110,14 +101,12 @@
   align-items: center;
 }
 
-
 .jpz-mytw-npc-body {
   display: flex;
   flex-wrap: wrap;  
   background: #fff;
   padding: 15px;
 }
-
 
 .jpz-mytw-npc-image {
   width: 140px;
@@ -128,7 +117,6 @@
   gap: 10px;
 }
 
-
 .jpz-mytw-npc-image img {
   width: 140px;
   height: 140px;
@@ -138,7 +126,6 @@
   display: block;
 }
 
-
 .jpz-mytw-npc-dialog {
   flex: 1;
   display: flex;
@@ -146,7 +133,6 @@
   margin-left: 10px;
   min-width: 180px;
 }
-
 
 .jpz-mytw-speech-bubble {
   position: relative;
@@ -160,7 +146,6 @@
   line-height: 1.4;
 }
 
-
 .jpz-mytw-speech-bubble::before {
   content: '';
   position: absolute;
@@ -171,14 +156,12 @@
   border-right-color: #686868;
 }
 
-
 .jpz-mytw-page-reward {
   display: flex;
   justify-content: center;
   padding-top: 20px;
   box-sizing: border-box;
 }
-
 
 .jpz-mytw-center-imagere {
   width: 300px;
@@ -187,7 +170,6 @@
   display: block;
   max-width: 100%; 
 }
-
 
 @media (max-width: 480px) {
   .jpz-mytw-text-box {
