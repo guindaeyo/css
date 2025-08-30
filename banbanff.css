@@ -1,13 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto|Be+Vietnam+Pro|Space+Mono);
 
-#container {
+#bbffzz-container {
   margin: 100px auto;
   position: relative;
   width: 500px; height: 500px;
   background: transparent;
 }
 
-#credit {
+#bbffzz-credit {
   position: absolute;
   width: 200px; height: 30px;
   left: 22%;
@@ -18,23 +18,23 @@
 }
 
 
-#heart-one {
+#bbffzz-heart-one {
   position: absolute;
   top: 25%; left: 7%;
   transform: rotate(-20deg);
 }
 
-#heart-one img {
+#bbffzz-heart-one img {
   width: 90px; height: 90px;
 }
 
 
-#heart-two {
+#bbffzz-heart-two {
   position: absolute;
   top: 1%; right: 34%;
   transform: rotate(20deg);
 }
 
-#heart-two img {
+#bbffzz-heart-two img {
   width: 90px; height: 90px;
 }
