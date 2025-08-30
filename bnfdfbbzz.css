@@ -31,8 +31,12 @@
 
 #bbffzz-heart-two {
   position: absolute;
-  top: 1%; right: 34%;
+  top: 1%; right: 35%;
   transform: rotate(20deg);
+}
+
+#bbffzz-heart-two img {
+  width: 90px; height: 90px;
 }
 
 #bbffzz-heart-two img {
