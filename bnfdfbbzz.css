@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Be+Vietnam+Pro|Space+Mono);
+
+#bbffzz-container {
+  margin: 100px auto;
+  position: relative;
+  width: 500px; height: 500px;
+  background: transparent;
+}
+
+#bbffzz-credit {
+  position: absolute;
+  width: 200px; height: 30px;
+  left: 22%;
+  text-align: center;
+  font-family: space mono;
+  font-size: 9px;
+  color: #fafafa;
+}
+
+
+#bbffzz-heart-one {
+  position: absolute;
+  top: 25%; left: 7%;
+  transform: rotate(-20deg);
+}
+
+#bbffzz-heart-one img {
+  width: 90px; height: 90px;
+}
+
+
+#bbffzz-heart-two {
+  position: absolute;
+  top: 1%; right: 34%;
+  transform: rotate(20deg);
+}
+
+#bbffzz-heart-two img {
+  width: 90px; height: 90px;
+}
