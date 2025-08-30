@@ -38,13 +38,3 @@
 #heart-two img {
   width: 90px; height: 90px;
 }
-
-
-
-body {
-  background-color: #1c1c1c;
-  background-size: 200px 200px;
-  background-image:
-    linear-gradient(to right, #171717 1px, transparent 1px),
-    linear-gradient(to bottom, #171717 1px, transparent 1px);
-}
