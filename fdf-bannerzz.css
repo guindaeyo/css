@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Be+Vietnam+Pro|Space+Mono);
+
+#bbffzz-container {
+  position: relative;
+  width: 400px;   
+  height: 400px;
+  background: transparent;
+}
+
+#bbffzz-main {
+  width: 400px;
+  height: 400px;
+  background: url("https://s14.gifyu.com/images/bTsQj.png") no-repeat center;
+  background-size: contain; 
+}
+
+#bbffzz-credit {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  color: #fafafa;
+}
+
+#bbffzz-heart-one {
+  position: absolute;
+  top: 45%;
+  left: 8%;
+  width: 90px;
+  height: 90px;
+  background: url("https://i.imgur.com/QSTCErk.png") no-repeat center;
+  background-size: contain;
+  transform: rotate(-20deg);
+}
+
+#bbffzz-heart-two {
+  position: absolute;
+  top: 8%;
+  right: 22%;
+  width: 90px;
+  height: 90px;
+  background: url("https://i.imgur.com/WV54JJI.png") no-repeat center;
+  background-size: contain;
+  transform: rotate(20deg);
+}
