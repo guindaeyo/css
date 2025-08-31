@@ -1,0 +1,164 @@
+:root {
+  --yaelbg: url("https://i.imgur.com/ByfnWX1.png");
+  --yaeltitrefont: "heroeau elegant demo";
+  --yaelfond: #101010;
+  --yaeltitre: #fff;
+  --yaelfont: "Bai Jamjuree";
+  --yaeltxtfonce: #352a30;
+  --yaeltxtclair: #aca9b3;
+  --yaelaccent: #b32b1d;
+  --yaelfondalt: rgba(0, 0, 0, 0.7);
+  --playfair: "Playfair Display";
+  --noir: #000;
+  --montserrat: "Montserrat";
+  --yaelgrad: linear-gradient(to top, #101010 40%, transparent);
+  --yaelbg2: url("https://i.imgur.com/XMKYowb.png");
+  --yaelfond2: #191919;
+}
+
+#yael *::-webkit-scrollbar {
+  width: 3px;
+}
+
+#yael *::-webkit-scrollbar-track {
+  background: var(--yaelfond);
+}
+
+#yael *::-webkit-scrollbar-thumb {
+  background: var(--noir);
+}
+#yael .overflow {
+  padding-right: 5px;
+  text-align: justify;
+}
+
+#yael * {
+  transition: all ease 0.6s;
+  box-sizing: border-box;
+}
+
+#yael {
+  background: var(--yaelfond);
+  width: 1000px;
+  margin: auto;
+  font: 14px var(--yaelfont);
+  color: var(--yaeltxtclair);
+}
+
+#yael .header {
+  background: var(--yaelbg);
+  background-size: cover;
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c b"
+    "d b"
+    "e e";
+  padding: 50px;
+  gap: 20px;
+  background-position: right;
+}
+
+#yael .header .infos {
+  background: var(--yaelbg2);
+  grid-area: a;
+  transition-delay: 0s;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 30px;
+  backdrop-filter: blur(10px);
+  width: 310px;
+  justify-self: flex-end;
+  background-size: cover;
+}
+#yael .info {
+  text-align: center;
+}
+#yael .info x {
+  display: block;
+  color: var(--yaelaccent);
+  font: 700 10px var(--playfair);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#yael .animal {
+  grid-area: d;
+  width: 470px;
+  font: 67px var(--yaeltitrefont);
+  color: var(--yaeltitre);
+  text-align: right;
+  line-height: 110%;
+  border-right: 1px solid #fff;
+  padding-right: 20px;
+}
+
+#yael .header .bloc {
+  background: var(--yaelbg2);
+  grid-area: b;
+  transition-delay: 0s;
+  padding: 35px;
+  background-size: cover;
+}
+
+#yael .bloc .overflow {
+  height: 500px;
+  overflow: auto;
+  line-height: 2;
+}
+#yael .bloc .titre {
+  font: 25px var(--yaeltitrefont);
+  text-align: center;
+}
+#yael .titre sub {
+  display: block;
+  font: italic 15px var(--yaelfont);
+}
+#yael .bloc scene {
+  display: block;
+  font: 900 12px var(--playfair);
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+#yael .dialogue {
+  width: 90%;
+  margin: auto;
+  margin-top: 25px;
+  font-size: 15px;
+  font-family: var(--yaelfont);
+}
+.dialogue perso,
+sub {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+.dialogue sub {
+  font-style: italic;
+}
+
+#yael .unwanted {
+  grid-area: e;
+  justify-self: center;
+  color: var(--yaeltitre);
+  font: 400 7px playfair display;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  padding-top: 20px;
+}
+#yael .unwanted i {
+  font-weight: 700;
+}
+#yael .unwanted b {
+  font-family: montserrat;
+  font-weight: 700;
+  color: var(--yaelaccent);
+}
+
+#yael .degrade {
+  background: var(--yaelgrad);
+  height: 134px;
+  margin-top: -100px;
+}
