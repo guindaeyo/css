@@ -27,8 +27,8 @@
 
 #bbffzz-heart-one {
   position: absolute;
-  top: 32%;
-  left: 11%;
+  top: 40%;
+  left: 8%;
   width: 90px;
   height: 90px;
   background: url("https://i.imgur.com/QSTCErk.png") no-repeat center;
@@ -38,11 +38,19 @@
 
 #bbffzz-heart-two {
   position: absolute;
-  top: 0%;
+  top: 3%;
   right: 22%;
   width: 90px;
   height: 90px;
   background: url("https://i.imgur.com/WV54JJI.png") no-repeat center;
   background-size: contain;
   transform: rotate(20deg);
+}
+
+body {
+  background-color: #1c1c1c;
+  background-size: 200px 200px;
+  background-image:
+    linear-gradient(to right, #171717 1px, transparent 1px),
+    linear-gradient(to bottom, #171717 1px, transparent 1px);
 }
