@@ -1,0 +1,88 @@
+:root{
+      --bg:#0d0d0f;        /* page bg */
+      --soft:#141417;      /* panels */
+      --muted:#a9a9b2;     /* secondary text */
+      --text:#f3f3f5;      /* primary text */
+      --accent:#ff2e3e;    /* red */
+      --pill:#1e1e23;      /* chips */
+      --stroke:#2b2b31;    /* borders */
+    }
+    .fdfrvmu-pp-pp{
+      max-width: 750px;  
+      width: 100%;
+      margin:auto; 
+      background:var(--bg); 
+      color:var(--text);
+      font-family:Inter, "Noto Sans KR", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    .fdfrvmu-container{
+        max-width:680px; 
+        margin:0 auto; 
+        padding:24px 0px 24px}
+
+    /* ───────── Top Nav ───────── */
+    .fdfrvmu-topbar{display:flex; align-items:center; justify-content:space-between; gap:20px; padding:10px 0}
+    .fdfrvmu-nav-left{display:flex; align-items:center; gap:16px}
+    .fdfrvmu-chip{
+      display:inline-flex; align-items:center; gap:10px;
+      background:var(--pill); color:#fff; border-radius:999px; padding:8px 14px; border:1px solid var(--stroke);
+      position:relative; box-shadow:0 0 0 1px rgba(255,255,255,.02) inset;
+    }
+    .fdfrvmu-chip--active{background:#2a0f13; border-color:#522226}
+    .fdfrvmu-chip--active .dot{background:var(--accent)}
+    .fdfrvmu-dot{width:8px; height:8px; background:#ff625f; border-radius:999px}
+    .fdfrvmu-boo{display:flex; align-items:center; gap:10px; color:#ff625f; letter-spacing:.6px; font-size: 25px;}
+
+    /* ───────── Video Card ───────── */
+    .fdfrvmu-video-wrap{
+      width: 680px;
+      height: 445px;
+      margin-top:14px; background:var(--soft); border:1px solid var(--stroke);
+      border-radius:18px; overflow:hidden; position:relative;
+      box-shadow:0 15px 50px rgba(0,0,0,.35);
+    }
+    .fdfrvmu-video-aspect{position:relative; padding-top:56.2%;}
+    .fdfrvmu-video-aspect .fdfrvmu-fake-video{
+      position:absolute; inset:0; background:
+        url('https://images.unsplash.com/photo-1520038410233-7141be7e6f55?q=80&w=2060&auto=format&fit=crop') center/cover;
+    }
+    .fdfrvmu-video-controls{position:absolute; left:0; right:0; bottom:0; padding:18px 20px; background:linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.45) 25%, rgba(0,0,0,.65) 100%)}
+    .fdfrvmu-progress{height:6px; background:#2a2a31; border-radius:999px; overflow:hidden; border:1px solid #00000055}
+    .fdfrvmu-progress > i{display:block; width:32%; height:100%; background:var(--accent)}
+
+    /* ───────── Section Titles ───────── */
+    .fdfrvmu-h-meta{font-size: 20px; text-align: justify; color:#d9d9e0;   font-family: "Jua", sans-serif; font-weight: 400; font-style: normal; margin: 20px 0 20px;}
+    .fdfrvmu-h-xxl{font-size: 50px; font-weight:900; letter-spacing:6px; margin: 25px 0px 15px; text-transform:uppercase; opacity:.95}
+    .fdfrvmu-h-xxl span{display:block; text-align:center; background:linear-gradient(180deg,#f0f0f2, #cfcfd6 65%); -webkit-background-clip:text; background-clip:text; color:transparent;}
+    .fdfrvmu-h-nameteam {font-size: 20px; text-align:center; color:#c8c8d0; margin:-8px 0 30px; font-weight:700; letter-spacing:2px;}
+
+    /* ───────── Polaroid Strip ───────── */
+    .fdfrvmu-polaroid{
+      margin:34px 0 0; background:var(--soft); border:1px solid var(--stroke); border-radius:12px; padding:28px; position:relative;
+    }
+    .fdfrvmu-p-row{display:flex; gap:34px; justify-content:center; flex-wrap:wrap}
+    .fdfrvmu-pol{width:140px; aspect-ratio:3/4; background:#efeff2; border:1px solid #e6e6ed; box-shadow:0 16px 30px rgba(0,0,0,.25); transform:rotate(-4deg)}
+    .fdfrvmu-pol:nth-child(2){transform:rotate(2deg)}
+    .fdfrvmu-pol:nth-child(3){transform:rotate(-1deg)}
+
+  
+  .fdfrvmu-pol img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  border-radius: 2px;
+
+}
+
+    .fdfrvmu-desc{color:#bdbdcc; text-align:center; font-size:15px; font-family: "Bai Jamjuree", sans-serif; font-weight: 500; font-style: normal; letter-spacing:.6px; margin-top:30px; line-height: 1.7;}
+
+    /* ───────── Player Area ───────── */
+    .fdfrvmu-player-wrap{display:flex; align-items:center; justify-content:space-between; gap:14px; background:var(--soft); border:1px solid var(--stroke); border-radius:888px; padding:10px 14px; margin:0 0 0;}
+    .fdfrvmu-avatar{width:60px; height:60px; border-radius:999px; overflow:hidden; border:2px solid #2d2d2d;}
+    .fdfrvmu-avatar img{width:100%; height:100%; object-fit:cover; display:block}
+    .fdfrvmu-track{flex:1}
+    .fdfrvmu-track .title{font-weight:700}
+    .fdfrvmu-sub{font-size:11px; color:var(--muted)}
+    .fdfrvmu-controls{display:flex; gap:10px}
+    .fdfrvmu-btn{background:var(--pill); color:#fff; border:1px solid var(--stroke); padding:8px 12px; border-radius:8px; font-weight:600; font-size:12px}
+    .fdfrvmu-btn--ghost{background:transparent}
