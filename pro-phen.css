@@ -1,0 +1,226 @@
+.trending {
+  width:580px;
+  border-radius:var(--bradius1);
+  margin:10px auto;
+  background:var(--bckg1);
+  overflow:hidden;
+  color:var(--text);
+}
+
+.trending br { display:none; }
+
+.trending .tdbody>.tdtexto br, .trending .tdbox br { display:block; }
+
+.trending .tdbody>.tdtexto::-webkit-scrollbar, .trending .tdbox::-webkit-scrollbar {
+  width:1px;
+}
+.trending .tdbody>.tdtexto::-webkit-scrollbar-track, .trending .tdbox::-webkit-scrollbar-track {
+  background:var(--bckg2);
+}
+.trending .tdbody>.tdtexto::-webkit-scrollbar-thumb, .trending .tdbox::-webkit-scrollbar-thumb {
+  background:var(--accent1);
+}
+
+.trending::selection, .trending *::selection {
+  background:var(--accent1);
+  color:var(--title);
+}
+
+.tdheader, .tdheader>*, .tdbody, .tdenv, .tdimgs, .tdenv .tdtexto, .tdhright .tdhdato, .tdhright .tdhdato span {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.tdhleft, .tdbody .tdenv, .tdimgs>.tdenv, .tdenv .tdtexto {
+  flex-direction:column;
+}
+
+.tdheader {
+  background:var(--accent1);
+  padding:40px 40px 60px;
+  color:var(--title);
+}
+
+.tdhleft {
+  align-items:flex-start;
+  text-transform:lowercase;
+  text-shadow:var(--shadow-d);
+  flex-grow:1;
+}
+
+.tdhleft span {
+  font:20px 'Poppins';
+  line-height:16px;
+}
+
+.tdhleft em {
+  font:11px 'Poppins';
+}
+
+.tdhright {
+  flex-shrink:0;
+}
+
+.tdhright .tdhdato {
+  background:var(--accent2);
+  border-radius:100%;
+  position:relative;
+  width:30px;
+  height:30px;
+  cursor:pointer;
+  margin-right:10px;
+}
+
+.tdhright .tdhdato>em {
+  font-size:14px;
+}
+
+.tdhright .tdhdato span {
+  position:absolute;
+  top:35px;
+  background:var(--accent2);
+  border-radius:var(--bradius2);
+  font:10px 'Roboto';
+  text-transform:uppercase;
+  padding:5px 10px;
+  transform: rotateX(-90deg);
+  transform-origin:top;
+  transition:ease 0.4s;
+}
+
+.tdhright .tdhdato:hover span {
+  transform: rotateX(0deg);
+}
+
+.tdhright .tdhdato span em {
+  margin-left:3px;
+  font-style:normal;
+}
+
+.tdhright .tdhdato span:before {
+  content:"";
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 2.5px 5px 2.5px;
+border-color: transparent transparent var(--accent2) transparent;
+  position:absolute;
+  top:-5px;
+}
+
+.tdhicon {
+  width:100px;
+  height:100px;
+  border:2px solid var(--accent2);
+  border-radius:100%;
+  background-size:cover;
+  backgorund-position:center;
+}
+
+.tdtexto {
+  border:20px solid var(--bckg2);
+  background:var(--bckg2);
+  border-radius:var(--bradius2);
+  border-right-width:15px;
+  padding-right:5px;
+  overflow:auto;
+  text-align:justify;
+  font:13px 'Bai Jamjuree';
+  box-shadow:var(--bshadow);
+  line-height:20px;
+}
+
+.tdbody>.tdtexto {
+  margin-right:20px;
+  align-self:stretch;
+  flex-grow:1;
+  min-height:300px;
+  max-height:400px;
+}
+
+.tdbody>.tdenv { flex-shrink:0; align-self:stretch;max-height:440px; }
+
+.tdenv .tdtexto {
+  overflow:hidden;
+  width:180px;
+  margin-bottom:20px;
+  flex-grow:1;
+  padding-right:0;
+  height:50%;
+  box-sizing:border-box;
+}
+
+.tdenv .tdtexto:last-of-type {
+  margin-bottom:0;
+}
+
+.tdbox {
+  overflow:auto;
+  flex-grow:1;
+  padding-right:5px;
+  width:100%;
+  box-sizing:border-box;
+  line-height:17px;
+  font-size:12px;
+}
+
+.tdtexto strong, .tdtexto b {
+  color:var(--accent1);
+}
+
+.tdtexto i, .tdtexto em, .tdtexto a {
+  color:var(--accent2);
+}
+
+.tdbody {
+  margin-top:-30px;
+  padding:0 20px;
+  margin-bottom:20px;
+}
+
+.tdttitle{
+  border-bottom:var(--border);
+  width:100%;
+  text-align:left;
+  font:11px 'Roboto';
+  text-transform:uppercase;
+  font-weight:700;
+  color:var(--subtitle);
+  padding-bottom:3px;
+  margin-bottom:3px;
+}
+
+.tdimgs {
+  margin-bottom:20px;
+  flex-wrap:wrap;
+  padding:0 20px;
+}
+
+.tdimg1, .tdimg2, .tdimg3 {
+  background-size:cover;
+  background-position:center;
+  border-radius:var(--bradius2);
+  box-shadow:var(--bshadow);
+}
+
+.tdimg1 {
+  width:200px;
+  height:140px;
+  margin-bottom:20px;
+}
+
+.tdimg2 {
+  width:90px;
+  height:90px;
+}
+
+.tdimg2:last-of-type {
+  margin-left:20px;
+}
+
+.tdimg3 {
+  height:250px;
+  width:320px;
+  margin-left:20px;
+}
