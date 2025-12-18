@@ -17,7 +17,7 @@
   margin-bottom:16px;
 }
 .cy650-top .line{width:64px;height:1px;background:var(--line);}
-.cy650-top .num{font-size:20px;font-weight:400;letter-spacing:.14em;}
+.cy650-top .num{font-size:15px;font-weight:400;letter-spacing:.14em;}
 
 .cy650-grid{
   display:grid;
