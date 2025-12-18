@@ -25,9 +25,8 @@
   grid-template-rows: 160px 180px;
   gap:5px;
   align-items:stretch;
-
-  max-width:550px;   /* จำกัดความกว้างกริดไม่เกิน 550px */
-  margin:0 auto;     /* จัดกึ่งกลาง */
+  max-width:550px;   
+  margin:0 auto;   
 }
 
 .cy650-img{
@@ -92,6 +91,7 @@
   line-height:1.7;
   color:#1a1a1a;
   word-break:break-word;
+  text-align: justify;
 }
 
 @media (max-width:420px){
