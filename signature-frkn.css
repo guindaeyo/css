@@ -1,6 +1,6 @@
 .carrd-jae-wrap{
-  --ink:#fff;
-  --line:#fff;
+  --ink:#6b6b6b;
+  --line:#6b6b6b;
 
   font-family:"Bai Jamjuree",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
   padding:64px 16px 70px;
@@ -98,8 +98,8 @@
 }
 
 .carrd-jae-nav{
-  color:#fff;
-  font-size:10px;
+  color:#6b6b6b;
+  font-size:11px;
   letter-spacing:.2px;
   text-transform:lowercase;
   padding-right:0px;
@@ -117,6 +117,6 @@
   .carrd-jae-title{ font-size:15px; }
   .carrd-jae-media{ height:200px; }
   .carrd-jae-bottom{ padding:0 12px; }
-  .carrd-jae-nav{ font-size:10px; }
+  .carrd-jae-nav{ font-size:11px; }
   .carrd-jae-btn{ width:25px;height:25px; }
 }
