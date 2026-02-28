@@ -1,7 +1,6 @@
 .carrd-jae-wrap{
-  --ink:#4a4a4a;
-  --line:#7a7a7a;
-  --soft:#dcdcdc;
+  --ink:#fff;
+  --line:#fff;
 
   font-family:"Bai Jamjuree",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
   padding:64px 16px 70px;
@@ -12,30 +11,30 @@
 }
 
 .carrd-jae-card{
-  width:min(495px, 92vw);
-  border:2px solid var(--line);
-  background:#fff;
+  width:min(450px, 92vw);
+  border:1px solid var(--line);
+  background:#131313;
   box-sizing:border-box;
 }
 
 .carrd-jae-top{
-  height:40px;
+  height:35px;
   display:flex;
   align-items:center;
   justify-content:space-between;
   padding:0 22px;
-  border-bottom:2px solid var(--line);
+  border-bottom:1px solid var(--line);
   box-sizing:border-box;
 }
 
 .carrd-jae-title{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:8px;
   color:var(--ink);
   letter-spacing:.6px;
   font-weight:500;
-  font-size:15px;
+  font-size:14px;
 }
 .carrd-jae-title .dash{
   width:18px;height:1px;background:var(--line);display:inline-block;
@@ -48,7 +47,7 @@
 }
 .carrd-jae-dot{
   width:7px;height:7px;
-  border:2px solid var(--line);
+  border:1px solid var(--line);
   border-radius:50%;
   background:transparent;
 }
@@ -57,7 +56,7 @@
   height:200px; 
   position:relative;
   overflow:hidden;
-  background:#111;
+  background:#131313;
 }
 .carrd-jae-media img{
   width:100%;
@@ -73,7 +72,7 @@
   align-items:center;
   justify-content:space-between;
   padding:0 18px;
-  border-top:2px solid var(--line);
+  border-top:1px solid var(--line);
   box-sizing:border-box;
 }
 
@@ -85,8 +84,8 @@
 
 .carrd-jae-btn{
   width:25px;height:25px;
-  border:2px solid var(--line);
-  background:#fff;
+  border:1px solid var(--line);
+  background:#131313;
   display:grid;
   place-items:center;
   box-sizing:border-box;
@@ -99,7 +98,7 @@
 }
 
 .carrd-jae-nav{
-  color:#6b6b6b;
+  color:#fff;
   font-size:10px;
   letter-spacing:.2px;
   text-transform:lowercase;
@@ -113,7 +112,7 @@
 .carrd-jae-nav a:hover{ text-decoration:underline; }
 
 
-@media (max-width:495px){
+@media (max-width:450px){
   .carrd-jae-top{ padding:0 14px; height:40px; }
   .carrd-jae-title{ font-size:15px; }
   .carrd-jae-media{ height:200px; }
