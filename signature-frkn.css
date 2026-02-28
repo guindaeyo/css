@@ -1,0 +1,123 @@
+.carrd-jae-wrap{
+  --ink:#4a4a4a;
+  --line:#7a7a7a;
+  --soft:#dcdcdc;
+
+  font-family:"Bai Jamjuree",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  padding:64px 16px 70px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:22px;
+}
+
+.carrd-jae-card{
+  width:min(495px, 92vw);
+  border:2px solid var(--line);
+  background:#fff;
+  box-sizing:border-box;
+}
+
+.carrd-jae-top{
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 22px;
+  border-bottom:2px solid var(--line);
+  box-sizing:border-box;
+}
+
+.carrd-jae-title{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--ink);
+  letter-spacing:.6px;
+  font-weight:500;
+  font-size:15px;
+}
+.carrd-jae-title .dash{
+  width:18px;height:1px;background:var(--line);display:inline-block;
+}
+
+.carrd-jae-dots{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.carrd-jae-dot{
+  width:7px;height:7px;
+  border:2px solid var(--line);
+  border-radius:50%;
+  background:transparent;
+}
+
+.carrd-jae-media{
+  height:200px; 
+  position:relative;
+  overflow:hidden;
+  background:#111;
+}
+.carrd-jae-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+.carrd-jae-bottom{
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 18px;
+  border-top:2px solid var(--line);
+  box-sizing:border-box;
+}
+
+.carrd-jae-btns{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.carrd-jae-btn{
+  width:25px;height:25px;
+  border:2px solid var(--line);
+  background:#fff;
+  display:grid;
+  place-items:center;
+  box-sizing:border-box;
+}
+.carrd-jae-btn svg{
+  width:18px;height:18px;
+  stroke:var(--ink);
+  fill:none;
+  stroke-width:2;
+}
+
+.carrd-jae-nav{
+  color:#6b6b6b;
+  font-size:10px;
+  letter-spacing:.2px;
+  text-transform:lowercase;
+  padding-right:0px;
+  white-space:nowrap;
+}
+.carrd-jae-nav a{
+  color:#6b6b6b;
+  text-decoration:none;
+}
+.carrd-jae-nav a:hover{ text-decoration:underline; }
+
+
+@media (max-width:495px){
+  .carrd-jae-top{ padding:0 14px; height:40px; }
+  .carrd-jae-title{ font-size:15px; }
+  .carrd-jae-media{ height:200px; }
+  .carrd-jae-bottom{ padding:0 12px; }
+  .carrd-jae-nav{ font-size:10px; }
+  .carrd-jae-btn{ width:25px;height:25px; }
+}
