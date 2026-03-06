@@ -81,12 +81,23 @@
 .babiezfrn-float .bigav{
   position:absolute;
   left:50%;
-  top:10px;                 
+  top:10px;
   transform:translateX(-50%);
+
   width:150px;
   height:150px;
+  min-width:150px;
+  min-height:150px;
+  max-width:150px;
+  max-height:150px;
+
+  display:block;
+  aspect-ratio:1/1;
+
   border-radius:50%;
   object-fit:cover;
+  object-position:center;
+
   border:6px solid var(--pill);
   box-shadow:0 10px 20px rgba(0,0,0,.12);
   background:#fff;
