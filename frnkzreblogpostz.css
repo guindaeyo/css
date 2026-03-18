@@ -125,7 +125,7 @@
   word-break:break-word;
 }
 
-.frnkzreblog-nav .center{
+.frnkzreblog-nav .frnkzcenter{
   font-weight:700;
   text-align:center;
 }
@@ -149,7 +149,7 @@
     font-size:13px;
   }
 
-  .frnkzreblog-meta .time{
+  .frnkzreblog-meta .frnkztime{
     padding:2px 8px 3px;
     margin-right:6px;
   }
