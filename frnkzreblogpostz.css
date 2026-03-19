@@ -174,16 +174,23 @@
     gap:4px;
   }
 
-  .frnkzreblog-image div{
-    aspect-ratio:1 / 1;
-  }
+ .frnkzreblog-image div{
+  width:100%;
+  min-width:0;
+  aspect-ratio:1 / 1;
+  overflow:hidden;
+  background:#e9e9e9; 
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 
-  .frnkzreblog-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
-  }
+.frnkzreblog-image img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:contain;  
+}
 
   .frnkzreblog-text{
     margin:14px 4px 0;
