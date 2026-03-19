@@ -31,7 +31,7 @@
 
 .frnkzreblog-meta{
   padding:5px 8px 3px;
-  margin:0px 0px 0px;
+  margin:0;
   font-size:15px;
   line-height:1;
   color:#7a7a7a;
@@ -80,9 +80,11 @@
   width:100%;
   height:100%;
   display:block;
-  object-fit:contain;
+  object-fit:cover;
+  object-position:center;
 }
 
+/* ===== TEXT ===== */
 .frnkzreblog-text{
   margin:20px 8px 0;
   font-size:15px;
@@ -153,6 +155,7 @@
   .frnkzreblog-meta{
     padding:0 4px;
     font-size:13px;
+    line-height:1.2;
   }
 
   .frnkzreblog-meta .frnkztime{
@@ -166,14 +169,21 @@
     margin-bottom:12px;
   }
 
-  .frnkzreblog-image img{
-    object-fit:contain;
+  .frnkzreblog-image{
+    margin:0 4px 14px;
+    gap:4px;
   }
 
   .frnkzreblog-image div{
-    background:#e9e9e9;
+    aspect-ratio:1 / 1;
   }
-}
+
+  .frnkzreblog-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+  }
 
   .frnkzreblog-text{
     margin:14px 4px 0;
@@ -194,6 +204,14 @@
 }
 
 @media (max-width:420px){
+  .frnkzreblog-wrap{
+    padding:0 8px;
+  }
+
+  .frnkzreblog-card{
+    padding:14px 10px;
+  }
+
   .frnkzreblog-meta{
     font-size:12px;
   }
@@ -202,12 +220,22 @@
     font-size:10px;
   }
 
+  .frnkzreblog-image{
+    gap:3px;
+    margin:0 2px 12px;
+  }
+
   .frnkzreblog-text{
     font-size:12px;
+    margin:12px 2px 0;
   }
 
   .frnkzreblog-stats,
   .frnkzreblog-nav{
     font-size:12px;
+  }
+
+  .frnkzreblog-nav{
+    padding:10px;
   }
 }
