@@ -1,15 +1,13 @@
 .ativfzr-movies{
   --cream:#f4f4ed;
   --black:#000;
-  width:min(800px, 100%);
-  max-width:100%;
+  width:800px;
   margin:0 auto;
   background:#000;
   padding:38px 30px 0;
   box-sizing:border-box;
   color:#000;
   font-family:"Bai Jamjuree",sans-serif;
-  overflow:hidden;
 }
 
 .ativfzr-hero{
@@ -60,7 +58,7 @@
 
 .ativfzr-burst{
   position:absolute;
-  top:53px;
+  top:65px;
   right:210px;
   width:92px;
   height:92px;
