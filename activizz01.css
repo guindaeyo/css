@@ -518,211 +518,110 @@
 
 @media screen and (max-width:680px){
 
-  *{
-    box-sizing:border-box;
-  }
-
   html,
   body{
-    width:100%;
-    overflow-x:hidden;
+    overflow-x:hidden!important;
   }
 
   .ativfzr-movies{
-    width:100%;
-    max-width:100%;
-    padding:10px 8px 0;
-    overflow:hidden;
+    width:100%!important;
+    max-width:100%!important;
+
+    padding:10px 8px 0!important;
+
+    overflow:hidden!important;
   }
 
-  .ativfzr-hero{
-    height:420px;
-    border-radius:0 0 38px 38px;
-    overflow:hidden;
-  }
-
+  .ativfzr-hero,
   .ativfzr-list,
   .ativfzr-info{
-    width:100%;
-    max-width:100%;
-    overflow:hidden;
-    padding-left:18px;
-    padding-right:18px;
-  }
+    width:100%!important;
+    max-width:100%!important;
 
-  .ativfzr-title{
-    font-size:48px;
-    letter-spacing:-2px;
-    top:40px;
-  }
-
-  .ativfzr-sub{
-    font-size:24px;
-    top:88px;
-  }
-
-  .ativfzr-dot.l{
-    left:25px;
-  }
-
-  .ativfzr-dot.r{
-    right:25px;
-  }
-
-  .ativfzr-burst{
-    right:40px;
-    top:45px;
-    width:70px;
-    height:70px;
-  }
-
-  .ativfzr-burst span{
-    font-size:32px;
-    top:17px;
-    left:10px;
-  }
-
-  .ativfzr-search{
-    width:220px;
-    top:132px;
-  }
-
-  .ativfzr-bar{
-    width:198px;
-  }
-
-  .ativfzr-tv{
-    width:210px;
-    top:190px;
-  }
-
-  .ativfzr-tv-bg{
-    width:135px;
-    height:120px;
-    top:255px;
-  }
-
-  .ativfzr-arrow{
-    font-size:42px;
-    top:270px;
-  }
-
-  .ativfzr-arrow.l{
-    left:28px;
-  }
-
-  .ativfzr-arrow.r{
-    right:28px;
-  }
-
-  .ativfzr-name{
-    width:220px;
-    height:38px;
-    line-height:38px;
-    font-size:13px;
+    overflow:hidden!important;
   }
 
   .ativfzr-main{
-    grid-template-columns:1fr;
-    margin:25px 0 20px;
-    gap:18px;
+    display:flex!important;
+    flex-direction:column!important;
+
+    gap:18px!important;
+
+    margin:25px 0 20px!important;
   }
 
   .ativfzr-maintext{
-    width:100%;
-    margin:0;
+    width:100%!important;
+
+    margin:0!important;
+    padding:0!important;
   }
 
-  .ativfzr-poster{
-    width:100%;
-    height:auto;
+  .ativfzr-poster,
+  .ativfzr-card img,
+  .ativfzr-five img{
+    width:100%!important;
+    max-width:100%!important;
+    height:auto!important;
   }
 
-  .ativfzr-film-title{
-    font-size:58px;
-  }
-
-  .ativfzr-desc{
-    width:100%;
-    font-size:12px;
-  }
-
-  .ativfzr-rate-big{
-    margin-left:0;
+  .ativfzr-desc,
+  .ativfzr-card p,
+  .ativfzr-five p{
+    width:100%!important;
+    max-width:100%!important;
   }
 
   .ativfzr-grid{
-    grid-template-columns:1fr;
-    gap:30px;
+    grid-template-columns:1fr!important;
+    gap:28px!important;
   }
 
-  .ativfzr-card{
-    width:100%;
+  .ativfzr-five{
+    display:flex!important;
+    flex-direction:column!important;
+
+    width:100%!important;
+
+    margin:30px 0 70px!important;
   }
 
-  .ativfzr-card img{
-    width:100%;
-    height:auto;
-    max-width:100%;
-  }
-
-  .ativfzr-card h3{
-    margin-left:0;
-  }
-
-  .ativfzr-card p{
-    width:100%;
-    max-width:100%;
-  }
+  .ativfzr-title-1,
+  .ativfzr-title-2,
+  .ativfzr-title-3,
 
   .ativfzr-text-1,
   .ativfzr-text-2,
   .ativfzr-text-3,
+
   .ativfzr-rate-1,
   .ativfzr-rate-2,
-  .ativfzr-rate-3{
-    left:0;
-  }
-
-  .ativfzr-five{
-    grid-template-columns:1fr;
-    width:100%;
-    margin:30px 0 70px;
-  }
-
-  .ativfzr-five p{
-    width:100%;
-  }
-
-  .ativfzr-five img{
-    width:100%;
-    height:auto;
-  }
-
+  .ativfzr-rate-3,
   .ativfzr-rate-4{
-    left:0;
+    left:0!important;
+    top:0!important;
+  }
+
+  .ativfzr-card h3{
+    margin-left:0!important;
   }
 
   .ativfzr-check{
-    width:100%;
+    width:100%!important;
   }
 
   .ativfzr-bottom-no{
-    font-size:110px;
-    bottom:-20px;
+    font-size:110px!important;
+    bottom:-20px!important;
   }
 
   .ativfzr-info{
-    font-size:13px;
-  }
-
-  .ativfzr-info h2{
-    font-size:21px;
+    padding:28px 18px 40px!important;
   }
 
   img{
-    max-width:100%;
-    height:auto;
+    max-width:100%!important;
+    height:auto!important;
     display:block;
   }
 }
