@@ -518,20 +518,14 @@
   z-index:5;
 }
 
-@media screen and (max-width:600px){
-
-  html,
-  body{
-    overflow-x:hidden!important;
-  }
-
+@media screen and (max-width:680px){
   .ativfzr-movies{
-    width:100%!important;
-    max-width:100%!important;
-
-    padding:10px 8px 0!important;
-
-    overflow:hidden!important;
+    width:100vw;
+    max-width:100vw;
+    margin-left:calc(50% - 50vw);
+    margin-right:calc(50% - 50vw);
+    padding:12px 8px 0;
+    overflow:hidden;
   }
 
   .ativfzr-hero,
