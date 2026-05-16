@@ -423,12 +423,12 @@
 }
 
 .ativfzr-five img{
-  width:250px;
+  width:280px;
   height:145px;
-  object-fit:contain;
+  object-fit:cover;
   object-position:center center;
   border:1px solid #000;
-  background:#000;
+  display:block;
 }
 
 .ativfzr-rate-4{
