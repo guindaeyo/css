@@ -236,26 +236,23 @@
 
 .ativfzr-main{
   display:grid;
-  grid-template-columns:175px 1fr;
-  gap:34px;
+  grid-template-columns:350px 1fr;
+  gap:26px;
   align-items:start;
-  margin-bottom:20px;
-  margin-top:25px;
-  margin-left:30px;
-  margin-right:0px;
+  margin:25px 20px 20px;
 }
 
 .ativfzr-poster{
   width:280px;
-  height:200px;
+  height:250px;
   object-fit:cover;
+  border:1px solid #000;
 }
 
 .ativfzr-maintext{
-  padding-top:4px;
-  margin-left:90px;
-  margin-right:0px;
-  margin-top:-15px;
+  width:130%;
+  margin-left:-60px;
+  padding-top:0;
 }
 
 .ativfzr-no{
@@ -263,37 +260,46 @@
   font-weight:900;
   display:inline-block;
   vertical-align:top;
-  margin-top:10px;
+  margin-top:18px;
+  letter-spacing:-3px;
 }
 
 .ativfzr-film-title{
   display:inline-block;
   font-family:"Herr Von Muellerhoff",cursive;
-  font-size:78px;
-  line-height:.65;
+  font-size:70px;
+  line-height:.7;
   margin-left:10px;
 }
 
 .ativfzr-desc{
+  width:100%;
+  max-width:430px;
+
   font-size:13px;
-  line-height:1.5;
+  line-height:1.55;
+
   text-align:justify;
-  margin-top:8px;
-  width:320px;
+
+  margin-top:12px;
 }
 
 .ativfzr-rate-big{
-  margin:10px 0 0 32px;
-  width:202px;
-  height:19px;
+  width:255px;
+  height:24px;
+
+  margin:18px auto 0;
+
   background:#000;
+
   color:#fff;
+
   text-align:center;
-  font-size:13px;
-  line-height:19px;
-  letter-spacing:3px;
-  margin-left:50px;
-  margin-right:0px;
+
+  font-size:15px;
+  line-height:24px;
+
+  letter-spacing:4px;
 }
 
 .ativfzr-grid{
