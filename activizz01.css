@@ -401,8 +401,8 @@
   grid-template-columns:1fr 175px;
   gap:8px;
   align-items:center;
-  margin:18px 0 50px 250px;
-  width:278px;
+  margin:18px 0 50px 200px;
+  width:250px;
 }
 
 .ativfzr-five h3{
@@ -415,7 +415,7 @@
 }
 
 .ativfzr-five p{
-  width:200px;
+  width:250px;
   font-size:12px;
   line-height:1.5;
   text-align:justify;
@@ -424,14 +424,14 @@
 
 .ativfzr-five img{
   width:200px;
-  height:120px;
+  height:150px;
   object-fit:cover;
   border:1px solid #000;
 }
 
 .ativfzr-rate-4{
   position:relative;
-  left:106px;
+  left:155px;
   top:0px;
 }
 
