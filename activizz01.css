@@ -251,7 +251,7 @@
 
 .ativfzr-maintext{
   width:130%;
-  margin-left:-60px;
+  margin-left:-70px;
   padding-top:0;
 }
 
@@ -260,45 +260,37 @@
   font-weight:900;
   display:inline-block;
   vertical-align:top;
-  margin-top:18px;
+  margin-top:8px;
   letter-spacing:-3px;
 }
 
 .ativfzr-film-title{
   display:inline-block;
+  font-family:"Bai Jamjuree",sans-serif;
   font-family:"Herr Von Muellerhoff",cursive;
-  font-size:70px;
+  font-size:55px;
   line-height:.7;
-  margin-left:10px;
+  margin-left:12px;
 }
 
 .ativfzr-desc{
   width:100%;
   max-width:430px;
-
   font-size:13px;
   line-height:1.55;
-
   text-align:justify;
-
   margin-top:12px;
 }
 
 .ativfzr-rate-big{
   width:255px;
   height:24px;
-
   margin:18px auto 0;
-
   background:#000;
-
   color:#fff;
-
   text-align:center;
-
   font-size:15px;
   line-height:24px;
-
   letter-spacing:4px;
 }
 
@@ -321,6 +313,7 @@
 .ativfzr-card h3{
   margin-left:30px;
   margin-top:10px;
+  font-family:"Bai Jamjuree",sans-serif;
   font-family:Arial,sans-serif;
   font-size:20px;
   line-height:.95;
