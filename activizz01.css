@@ -314,7 +314,7 @@
   margin-left:30px;
   margin-top:10px;
   font-family:Arial,"Bai Jamjuree",sans-serif;
-  font-size:20px;
+  font-size:17px;
   line-height:.95;
   font-weight:900;
 }
@@ -408,7 +408,7 @@
 .ativfzr-five h3{
   margin:0 0 4px;
   font-family:Arial,"Bai Jamjuree",sans-serif;
-  font-size:20px;
+  font-size:17px;
   line-height:.9;
   text-align:right;
   font-weight:900;
@@ -424,9 +424,11 @@
 
 .ativfzr-five img{
   width:250px;
-  height:150px;
-  object-fit:cover;
+  height:145px;
+  object-fit:contain;
+  object-position:center center;
   border:1px solid #000;
+  background:#000;
 }
 
 .ativfzr-rate-4{
