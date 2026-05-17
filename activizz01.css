@@ -39,7 +39,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  font-family: Georgia, serif,"Bai Jamjuree",sans-serif;
+  font-family: Georgia,"Bai Jamjuree",sans-serif;
   font-size: clamp(20px, 4.5vw, 35px);
   letter-spacing: 1px;
   z-index: 4;
