@@ -13,24 +13,6 @@
   overflow:hidden;
 }
 
-@media screen and (max-width:680px){
-  html,
-  body{
-    overflow-x:hidden!important;
-  }
-
-  .ativfzr-movies{
-    width:calc(100vw - 20px)!important;
-    max-width:calc(100vw - 20px)!important;
-    margin:0 auto!important;
-    padding:10px 6px 0!important;
-    overflow:hidden!important;
-    box-sizing:border-box!important;
-  }
-
-}
-
-
 .ativfzr-hero{
   position:relative;
   height:490px;
@@ -271,7 +253,7 @@
 }
 
 .ativfzr-maintext{
-  width:130%;
+  max-width:130%;
   margin-left:-70px;
   padding-top:0;
 }
