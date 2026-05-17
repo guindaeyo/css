@@ -239,10 +239,13 @@
 
 .ativfzr-main{
   display:grid;
-  grid-template-columns:350px 1fr;
+  grid-template-columns:minmax(0,350px) minmax(0,1fr);
   gap:26px;
   align-items:start;
   margin:25px 20px 20px;
+  width:100%;
+  max-width:100%;
+  overflow:hidden;
 }
 
 .ativfzr-poster{
@@ -277,7 +280,7 @@
 }
 
 .ativfzr-desc{
-  width:130%;
+  width:110%;
   max-width:430px;
   font-size:13px;
   line-height:1.55;
