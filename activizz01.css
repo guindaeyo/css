@@ -253,7 +253,7 @@
 }
 
 .ativfzr-maintext{
-  max-width:130%;
+  max-width:100%;
   margin-left:-70px;
   padding-top:0;
 }
@@ -277,7 +277,7 @@
 }
 
 .ativfzr-desc{
-  width:100%;
+  width:130%;
   max-width:430px;
   font-size:13px;
   line-height:1.55;
