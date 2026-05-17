@@ -39,7 +39,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  font-family: Georgia, serif;
+  font-family: Georgia, serif,"Bai Jamjuree",sans-serif;
   font-size: clamp(20px, 4.5vw, 35px);
   letter-spacing: 1px;
   z-index: 4;
@@ -62,7 +62,7 @@
 .ativfzr-burst {
   position: absolute;
   top: 62px;
-  right: 170px;
+  right: 190px;
   width: 92px;
   height: 92px;
   z-index: 7;
@@ -274,13 +274,13 @@
   letter-spacing: -3px;
 }
 
-.ativfzr-film-title {
-  display: inline-block;
-  font-family: "Herr Von Muellerhoff", cursive, "Bai Jamjuree", sans-serif;
-  font-size: 55px;
-  line-height: .7;
-  margin-left: 15px;
-  margin-top: 20px;
+.ativfzr-film-title{
+  display:inline-block;
+  font-family:"Herr Von Muellerhoff",cursive,"Bai Jamjuree",sans-serif;
+  font-size:55px;
+  line-height:.7;
+  margin-left:15px;
+  margin-top:20px;
 }
 
 .ativfzr-desc {
@@ -363,7 +363,7 @@
   letter-spacing: 1px;
 }
 
-.ativfzr-title-1, .ativfzr-title-2, .ativfzr-title-3 { position: relative; left: 4px !important; top: 0 !important; text-align:left;}
+.ativfzr-title-1, .ativfzr-title-2, .ativfzr-title-3 { position: relative; left: 6px !important; top: 0 !important; text-align:left;}
 .ativfzr-text-1,.ativfzr-text-2,.ativfzr-text-3{left:19px!important;top:0!important;text-align:left;width:100%;max-width:150px; line-height:1.7;word-break:break-word;}
 .ativfzr-rate-1, .ativfzr-rate-2, .ativfzr-rate-3 { position: relative; left: -50px !important; top: 0 !important; margin: 5px auto; display: block; width: max-content;}
 
