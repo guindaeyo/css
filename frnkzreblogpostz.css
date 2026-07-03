@@ -68,21 +68,25 @@
   margin:0 8px 18px;
 }
 
-.frnkzreblog-image div{
+.frnkzreblog-image > div{
   width:100%;
   min-width:0;
   aspect-ratio:1 / 1;
   overflow:hidden;
   background:#e9e9e9;
+  position:relative;
 }
 
-.frnkzreblog-image img{
+.frnkzreblog-image > div > img{
   width:100% !important;
   height:100% !important;
   max-width:none !important;
+  min-width:0 !important;
   display:block !important;
   object-fit:cover !important;
   object-position:center center !important;
+  position:absolute !important;
+  inset:0 !important;
 }
 
 .frnkzreblog-text{
@@ -193,19 +197,26 @@
   .frnkzreblog-image{
     margin:0 4px 14px;
     gap:4px;
+    grid-template-columns:repeat(3,minmax(0,1fr));
   }
 
-  .frnkzreblog-image div{
+  .frnkzreblog-image > div{
     aspect-ratio:1 / 1;
+    position:relative;
+    overflow:hidden;
+    background:#e9e9e9;
   }
 
-  .frnkzreblog-image img{
+  .frnkzreblog-image > div > img{
     width:100% !important;
     height:100% !important;
     max-width:none !important;
+    min-width:0 !important;
     display:block !important;
-    object-fit:contain !important;
+    object-fit:cover !important;
     object-position:center center !important;
+    position:absolute !important;
+    inset:0 !important;
   }
 
   .frnkzreblog-text{
@@ -254,6 +265,26 @@
   .frnkzreblog-image{
     gap:3px;
     margin:0 2px 12px;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+
+  .frnkzreblog-image > div{
+    aspect-ratio:1 / 1;
+    position:relative;
+    overflow:hidden;
+    background:#e9e9e9;
+  }
+
+  .frnkzreblog-image > div > img{
+    width:100% !important;
+    height:100% !important;
+    max-width:none !important;
+    min-width:0 !important;
+    display:block !important;
+    object-fit:cover !important;
+    object-position:center center !important;
+    position:absolute !important;
+    inset:0 !important;
   }
 
   .frnkzreblog-text{
