@@ -374,16 +374,14 @@
 
 .frdh-section-title {
   margin-top: 5px;
-
   color: var(--frdh-dark);
-  font-size: clamp(28px, 4.4vw, 47px);
+  font-size: 28px;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .frdh-section-note {
   max-width: 280px;
-
   color: #777b73;
   font-size: 13px;
   font-weight: 300;
@@ -688,9 +686,8 @@
 
 .frdh-resident-title {
   margin-top: 5px;
-
   color: var(--frdh-white);
-  font-size: clamp(28px, 4.4vw, 47px);
+  font-size: 28px;
   font-weight: 400;
   line-height: 1.25;
 }
