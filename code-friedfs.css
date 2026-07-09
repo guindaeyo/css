@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Meie+Script&display=swap');
 
 .frdh-wrap,
 .frdh-wrap *,
@@ -26,12 +26,10 @@
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 15px;
   line-height: 1.8;
   color: var(--frdh-dark);
-
   background:
     linear-gradient(
       135deg,
@@ -62,12 +60,10 @@
   min-height: clamp(410px, 60vw, 720px);
   position: relative;
   overflow: hidden;
-
   background-image: var(--frdh-hero);
   background-position: var(--frdh-hero-pos, center);
   background-repeat: no-repeat;
   background-size: cover;
-
   isolation: isolate;
 }
 
@@ -180,15 +176,23 @@
 }
 
 .frdh-name {
-  max-width: 100%;
+  --frdh-name-x: -70px;
+  --frdh-name-y: 15px;
 
+  font-family: "Meie Script", cursive;
+  max-width: 100%;
   font-size: clamp(44px, 9vw, 104px);
   font-weight: 300;
   line-height: 0.95;
   letter-spacing: -0.055em;
   overflow-wrap: anywhere;
-
   text-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+
+  position: relative;
+  transform: translate(
+    var(--frdh-name-x),
+    var(--frdh-name-y)
+  );
 }
 
 .frdh-hero-thai {
