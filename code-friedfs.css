@@ -920,28 +920,26 @@
   .frdh-hero-label {
     max-width: 190px;
     padding: 6px 9px;
-
     font-size: 7px;
     letter-spacing: 0.13em;
   }
 
-  .frdh-hero-title {
-    width: calc(100% - 54px);
-    bottom: 42px;
-  }
+.frdh-hero-title {
+  width: calc(100% - 54px);
+  bottom: 18px;
+}
 
-  .frdh-name {
-    font-size: clamp(42px, 16vw, 67px);
-    letter-spacing: -0.06em;
-  }
+.frdh-name {
+  font-size: clamp(42px, 16vw, 67px);
+  letter-spacing: -0.06em;
+}
 
-  .frdh-hero-thai {
-    max-width: 250px;
-    margin-top: 10px;
-
-    font-size: 11px;
-    line-height: 1.6;
-  }
+.frdh-hero-thai {
+  max-width: 250px;
+  margin-top: 10px;
+  font-size: 11px;
+  line-height: 1.6;
+}
 
   .frdh-intro {
     padding: 48px 23px;
