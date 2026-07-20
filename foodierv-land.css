@@ -776,7 +776,7 @@
 }
 
 .fdreview-credit span::before {
-  content: "✝ franklinlnwza";
+  content: "✝ deepdeepsleepfranklin";
   display: block;
   width: 135px;
   font-style: italic;
@@ -787,8 +787,6 @@
   color: rgba(215, 215, 215, 0.92);
 }
 
-/* ขยับ Desktop ทั้งก้อนไปทางซ้ายเฉพาะหน้าจอคอม
-   รูปฟิล์ม โพลารอยด์ หน้าต่างรูป และทุกอย่างด้านในขยับตาม */
 @media (min-width: 901px) {
   .fdreview-desktop {
     width: calc(100% + var(--fdreview-desktop-shift));
