@@ -8,6 +8,7 @@
 }
 
 .fdreview-wrap {
+  --fdreview-desktop-shift: 30px;
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
@@ -51,35 +52,62 @@
 }
 
 .fdreview-desktop {
+  --fdreview-bg-blur: 8px;
+  --fdreview-bg-zoom: 1.05;
+
   width: 100%;
   min-height: 730px;
   position: relative;
   overflow: hidden;
-  background-image:
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.03),
-      rgba(0, 0, 0, 0.08)
-    ),
-    var(--fdreview-bg);
-  background-size: cover;
-  background-position: center;
   isolation: isolate;
+  background: #111;
 }
 
 .fdreview-desktop::before {
   content: "";
   position: absolute;
+  inset: -25px;
+  z-index: -2;
+
+  background-image: var(--fdreview-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter:
+    blur(var(--fdreview-bg-blur))
+    saturate(0.85)
+    brightness(0.78);
+
+  transform: scale(var(--fdreview-bg-zoom));
+  pointer-events: none;
+}
+.fdreview-desktop::after {
+  content: "";
+  position: absolute;
   inset: 0;
   z-index: -1;
+
   background:
     linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.03),
+      rgba(0, 0, 0, 0.13)
+    ),
+    radial-gradient(
+      circle at center,
+      transparent 35%,
+      rgba(12, 12, 12, 0.22) 100%
+    ),
+    linear-gradient(
       90deg,
-      rgba(19, 24, 25, 0.12),
+      rgba(19, 24, 25, 0.15),
       transparent 35%,
       transparent 70%,
-      rgba(16, 18, 20, 0.12)
+      rgba(16, 18, 20, 0.18)
     );
+
+  pointer-events: none;
 }
 
 .fdreview-window {
@@ -394,7 +422,6 @@
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #bdbdbd transparent;
-
   display: flex;
   flex-direction: column;
 }
@@ -714,7 +741,7 @@
 }
 
 .fdreview-credit {
-  --fdreview-credit-y: -10px; 
+  --fdreview-credit-y: -10px;
 
   width: 100%;
   min-height: 25px;
@@ -758,6 +785,15 @@
 .fdreview-credit span:hover {
   width: 135px;
   color: rgba(215, 215, 215, 0.92);
+}
+
+/* ขยับ Desktop ทั้งก้อนไปทางซ้ายเฉพาะหน้าจอคอม
+   รูปฟิล์ม โพลารอยด์ หน้าต่างรูป และทุกอย่างด้านในขยับตาม */
+@media (min-width: 901px) {
+  .fdreview-desktop {
+    width: calc(100% + var(--fdreview-desktop-shift));
+    margin-left: calc(0px - var(--fdreview-desktop-shift));
+  }
 }
 
 @media (max-width: 900px) {
