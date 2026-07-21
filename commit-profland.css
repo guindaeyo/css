@@ -1,0 +1,1006 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap');
+
+.ldmac-wrap,
+.ldmac-wrap *,
+.ldmac-wrap *::before,
+.ldmac-wrap *::after {
+  box-sizing: border-box;
+}
+
+.ldmac-wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #252525;
+  background: #9dc9dd;
+  font-family: "Bai Jamjuree", sans-serif;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.28);
+}
+
+
+
+.ldmac-menubar {
+  width: 100%;
+  min-height: 28px;
+  padding: 0 15px;
+  position: relative;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  color: #191919;
+  background: rgba(242, 242, 240, 0.91);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.ldmac-menu-left,
+.ldmac-menu-right {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  white-space: nowrap;
+}
+
+.ldmac-menu-left strong {
+  font-weight: 700;
+}
+
+.ldmac-apple {
+  font-size: 8px;
+}
+
+
+
+.ldmac-desktop {
+  width: 100%;
+  min-height: 1250px;
+  padding: 38px 4.5% 105px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #b8cbd0;
+}
+
+.ldmac-desktop::before {
+  content: "";
+  position: absolute;
+  inset: -25px;
+  z-index: -2;
+  background-image: var(--ldmac-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  transform: scale(1.05);
+}
+
+.ldmac-desktop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.09),
+      rgba(30, 45, 41, 0.12)
+    );
+}
+
+
+
+.ldmac-window {
+  position: relative;
+  overflow: hidden;
+  background: rgba(248, 247, 244, 0.96);
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 9px;
+  box-shadow:
+    0 25px 55px rgba(17, 27, 25, 0.25),
+    0 3px 9px rgba(17, 27, 25, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.ldmac-windowbar {
+  min-height: 39px;
+  padding: 0 12px;
+  display: grid;
+  grid-template-columns: 75px minmax(0, 1fr) 75px;
+  align-items: center;
+  color: #4b4b4b;
+  background: rgba(239, 238, 235, 0.96);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  font-family: Arial, sans-serif;
+}
+
+.ldmac-traffic {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ldmac-traffic i {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+}
+
+.ldmac-traffic i:nth-child(1) {
+  background: #ff5f57;
+}
+
+.ldmac-traffic i:nth-child(2) {
+  background: #febc2e;
+}
+
+.ldmac-traffic i:nth-child(3) {
+  background: #28c840;
+}
+
+.ldmac-window-title {
+  overflow: hidden;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ldmac-window-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  color: #777;
+  font-size: 11px;
+}
+
+
+.ldmac-main-notes {
+  width: 68%;
+  margin-left: 4%;
+  margin-right: auto;
+  position: relative;
+  z-index: 4;
+}
+
+.ldmac-notes-app {
+  display: grid;
+  grid-template-columns: 185px minmax(0, 1fr);
+}
+
+.ldmac-sidebar {
+  padding: 17px 11px;
+  color: #64615c;
+  background: rgba(218, 216, 210, 0.95);
+  border-right: 1px solid rgba(0, 0, 0, 0.11);
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+
+.ldmac-sidebar-heading,
+.ldmac-sidebar-active,
+.ldmac-sidebar-item,
+.ldmac-sidebar-tag {
+  padding: 7px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 5px;
+}
+
+.ldmac-sidebar-heading {
+  margin-bottom: 8px;
+}
+
+.ldmac-sidebar-heading strong {
+  color: #333;
+  font-size: 13px;
+}
+
+.ldmac-sidebar-label {
+  padding: 10px 8px 4px;
+  color: #99958e;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ldmac-sidebar-active {
+  color: #fff;
+  background: var(--ldmac-accent);
+}
+
+.ldmac-sidebar-tag span {
+  color: var(--ldmac-accent);
+  font-weight: 700;
+}
+
+.ldmac-sidebar-preview {
+  margin-top: 20px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 7px;
+}
+
+.ldmac-sidebar-image {
+  width: 100%;
+  aspect-ratio: 1 / 1.12;
+  margin-bottom: 9px;
+  background-color: #888;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.03),
+      rgba(0, 0, 0, 0.12)
+    ),
+    var(--img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:
+    center,
+    var(--x, 50%) var(--y, 50%);
+  filter: grayscale(1);
+}
+
+.ldmac-sidebar-preview strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #363636;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+}
+
+.ldmac-sidebar-preview span {
+  color: #77736e;
+  font-size: 7px;
+  line-height: 1.55;
+}
+
+.ldmac-note {
+  min-width: 0;
+  padding: 0 82px 90px 28px;
+  background: rgba(252, 251, 248, 0.98);
+}
+
+.ldmac-note-toolbar {
+  min-height: 36px;
+  margin: 0 -82px 18px -28px;
+  padding: 0 17px;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  color: #8c8b86;
+  background: rgba(249, 248, 245, 0.97);
+  border-bottom: 1px solid #e3e0da;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+
+.ldmac-note-date {
+  margin-bottom: 13px;
+  color: #aaa69f;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  text-align: center;
+}
+
+.ldmac-note h1 {
+  margin: 0;
+  color: #292929;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.ldmac-note-subtitle {
+  margin: 4px 0 24px;
+  color: #7a7771;
+  font-size: 12px;
+}
+
+.ldmac-note h2 {
+  margin: 27px 0 13px;
+  padding-bottom: 7px;
+  color: #35332f;
+  border-bottom: 1px solid #d8d4cc;
+  font-size: 15px;
+}
+
+.ldmac-note p,
+.ldmac-document p,
+.ldmac-traits-text p,
+.ldmac-last-content p {
+  margin: 0 0 16px;
+  color: #373633;
+  font-size: 13.5px;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.ldmac-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid #ddd9d1;
+  border-left: 1px solid #ddd9d1;
+}
+
+.ldmac-info-grid > div {
+  min-width: 0;
+  padding: 10px 12px;
+  border-right: 1px solid #ddd9d1;
+  border-bottom: 1px solid #ddd9d1;
+}
+
+.ldmac-info-grid span {
+  display: block;
+  margin-bottom: 3px;
+  color: #aaa49a;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.ldmac-info-grid strong {
+  display: block;
+  color: #373531;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.ldmac-info-grid p {
+  margin: 2px 0 0;
+  color: #807b72;
+  font-size: 10px;
+  text-align: left;
+}
+
+.ldmac-note-quote {
+  margin: 24px 0;
+  padding: 19px;
+  color: #ece8df;
+  background: #353632;
+  border-left: 4px solid var(--ldmac-accent);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.65;
+  text-align: center;
+}
+
+
+
+.ldmac-photobooth {
+  width: 32%;
+  margin: 0;
+  position: absolute;
+  top: 72px;
+  right: 2%;
+  z-index: 9;
+  background: #d5c1bb;
+}
+
+.ldmac-photo-bar {
+  min-height: 29px;
+}
+
+.ldmac-photo-screen {
+  height: 285px;
+  position: relative;
+  overflow: hidden;
+  background: #8c7770;
+}
+
+.ldmac-photo-main {
+  width: 100%;
+  height: 100%;
+  background-color: #8d7e78;
+  background-image: var(--img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:
+    center,
+    var(--x, 50%) var(--y, 50%);
+  filter: saturate(0.8);
+}
+
+.ldmac-photo-strip {
+  width: 28%;
+  padding: 5px;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #ece9e2;
+  box-shadow: 0 11px 19px rgba(0, 0, 0, 0.28);
+  transform: rotate(-2deg);
+}
+
+.ldmac-strip-img {
+  width: 100%;
+  aspect-ratio: 1 / 1.03;
+  margin-bottom: 5px;
+  background-color: #888;
+  background-image: var(--img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:
+    var(--x, 50%) var(--y, 50%);
+  filter: grayscale(1);
+}
+
+.ldmac-strip-img:last-child {
+  margin-bottom: 0;
+}
+
+.ldmac-photo-control {
+  min-height: 49px;
+  padding: 0 14px;
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  align-items: center;
+  color: #5c5552;
+  background: rgba(229, 211, 205, 0.96);
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+}
+
+.ldmac-photo-control > div {
+  display: flex;
+  gap: 8px;
+}
+
+.ldmac-photo-control button {
+  width: 31px;
+  height: 31px;
+  justify-self: center;
+  color: #fff;
+  background: #ff3832;
+  border: 4px solid rgba(255, 255, 255, 0.82);
+  border-radius: 50%;
+}
+
+.ldmac-photo-control > span {
+  justify-self: end;
+  padding: 5px 9px;
+  background: rgba(255, 255, 255, 0.39);
+  border-radius: 4px;
+}
+
+.ldmac-second-notes {
+  width: 62%;
+  margin: -38px 0 0 2%;
+  position: relative;
+  z-index: 7;
+}
+
+.ldmac-document {
+  padding: 26px 32px 82px;
+  background: rgba(252, 251, 248, 0.98);
+}
+
+.ldmac-document-heading {
+  margin-bottom: 20px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #d8d4cc;
+}
+
+.ldmac-document-heading span {
+  display: block;
+  margin-bottom: 3px;
+  color: #a29d94;
+  font-family: Arial, sans-serif;
+  font-size: 6px;
+  letter-spacing: 0.16em;
+}
+
+.ldmac-document-heading strong {
+  color: #393733;
+  font-size: 14px;
+}
+
+.ldmac-audio {
+  margin-top: 25px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 34px 1fr 35px;
+  align-items: center;
+  gap: 11px;
+  background: #eeece7;
+  border: 1px solid #d6d2ca;
+  border-radius: 8px;
+}
+
+.ldmac-audio button {
+  width: 31px;
+  height: 31px;
+  color: #fff;
+  background: #353632;
+  border: 0;
+  border-radius: 50%;
+  font-size: 9px;
+}
+
+.ldmac-audio-info strong {
+  display: block;
+  margin-bottom: 7px;
+  color: #494741;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+}
+
+.ldmac-audio-line {
+  width: 100%;
+  height: 3px;
+  overflow: hidden;
+  background: #ccc7be;
+  border-radius: 50px;
+}
+
+.ldmac-audio-line span {
+  width: 43%;
+  height: 100%;
+  display: block;
+  background: var(--ldmac-accent);
+}
+
+.ldmac-audio small {
+  color: #8e8980;
+  font-family: Arial, sans-serif;
+  font-size: 7px;
+  text-align: right;
+}
+
+
+
+.ldmac-traits-window {
+  width: 70%;
+  margin: -34px 2% 0 auto;
+  position: relative;
+  z-index: 6;
+}
+
+.ldmac-traits-layout {
+  padding: 25px 25px 78px;
+  display: grid;
+  grid-template-columns: 195px minmax(0, 1fr);
+  align-items: start;
+  gap: 26px;
+  background: rgba(252, 251, 248, 0.98);
+}
+
+.ldmac-traits-picture {
+  padding: 7px 7px 13px;
+  background: #e9e6df;
+  box-shadow: 0 13px 28px rgba(0, 0, 0, 0.19);
+  transform: rotate(-1.5deg);
+}
+
+.ldmac-traits-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: #888;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.03),
+      rgba(0, 0, 0, 0.13)
+    ),
+    var(--img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:
+    center,
+    var(--x, 50%) var(--y, 50%);
+}
+
+.ldmac-picture-caption {
+  padding: 10px 3px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #6e6a64;
+  font-family: Arial, sans-serif;
+}
+
+.ldmac-picture-caption strong {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+}
+
+.ldmac-picture-caption span {
+  font-size: 9px;
+}
+
+.ldmac-traits-text {
+  min-width: 0;
+}
+
+
+
+.ldmac-last-window {
+  width: 59%;
+  margin: -32px 0 0 6%;
+  position: relative;
+  z-index: 8;
+}
+
+.ldmac-last-content {
+  padding: 27px 32px 42px;
+  background: rgba(252, 251, 248, 0.98);
+}
+
+.ldmac-final-quote {
+  margin: 24px 0;
+  padding: 20px;
+  color: #ede9e0;
+  background: #353632;
+  border-left: 4px solid var(--ldmac-accent);
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.ldmac-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ldmac-tags span {
+  padding: 5px 8px;
+  color: #7c7569;
+  background: #e9e5dd;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+}
+
+
+
+.ldmac-polaroids {
+  position: absolute;
+  top: 82px;
+  left: 1.5%;
+  z-index: 2;
+}
+
+.ldmac-polaroid {
+  width: 90px;
+  padding: 6px 6px 19px;
+  position: absolute;
+  background: #e8e6df;
+  box-shadow: 0 13px 23px rgba(0, 0, 0, 0.29);
+}
+
+.ldmac-polaroid > div {
+  width: 100%;
+  aspect-ratio: 1 / 1.12;
+  background-color: #888;
+  background-image: var(--img);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:
+    var(--x, 50%) var(--y, 50%);
+  filter: grayscale(1);
+}
+
+.ldmac-polaroid-one {
+  top: 0;
+  left: 0;
+  transform: rotate(-7deg);
+}
+
+.ldmac-polaroid-two {
+  top: 125px;
+  left: 43px;
+  transform: rotate(8deg);
+}
+
+
+
+.ldmac-dock {
+  width: max-content;
+  max-width: calc(100% - 30px);
+  min-height: 54px;
+  padding: 6px 8px;
+  position: absolute;
+  left: 50%;
+  bottom: 17px;
+  z-index: 20;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(224, 224, 220, 0.66);
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 14px;
+  box-shadow: 0 13px 28px rgba(0, 0, 0, 0.19);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.ldmac-dock span {
+  width: 39px;
+  height: 39px;
+  flex: 0 0 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 9px;
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.35),
+    0 3px 7px rgba(0, 0, 0, 0.19);
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.ldmac-dock-finder {
+  background: #69a7d1;
+}
+
+.ldmac-dock-browser {
+  background: #397ccd;
+}
+
+.ldmac-dock-music {
+  background: #dd4058;
+}
+
+.ldmac-dock-mail {
+  background: #448cd5;
+}
+
+.ldmac-dock-notes {
+  color: #6f642f !important;
+  background: #f0d25c;
+}
+
+.ldmac-dock-photo {
+  color: #777 !important;
+  background: #e9e5dc;
+}
+
+.ldmac-dock-settings {
+  background: #767b80;
+}
+
+.fdreview-credit {
+  --fdreview-credit-y: -10px;
+
+  width: 100%;
+  min-height: 25px;
+  padding: 7px 12px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translateY(var(--fdreview-credit-y));
+  background: transparent;
+  font-family: Arial, sans-serif;
+}
+
+.fdreview-credit span {
+  width: 11px;
+  height: 10px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgba(185, 185, 185, 0.58);
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.7px;
+  text-align: left;
+  cursor: help;
+  user-select: none;
+  -webkit-user-select: none;
+  transition:
+    width 0.35s ease,
+    color 0.25s ease;
+}
+
+.fdreview-credit span::before {
+  content: "✝ deepdeepsleepfranklin";
+  display: block;
+  width: 135px;
+  font-style: italic;
+}
+
+.fdreview-credit span:hover {
+  width: 135px;
+  color: rgba(215, 215, 215, 0.92);
+}
+
+
+@media (max-width: 850px) and (min-width: 651px) {
+
+  .ldmac-desktop {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .ldmac-main-notes {
+    width: 70%;
+    margin-left: 1.5%;
+  }
+
+  .ldmac-note {
+    padding-right: 62px;
+  }
+
+  .ldmac-note-toolbar {
+    margin-right: -62px;
+  }
+
+  .ldmac-photobooth {
+    width: 33%;
+    right: 1.5%;
+  }
+
+  .ldmac-second-notes {
+    width: 66%;
+    margin-left: 1%;
+  }
+
+  .ldmac-traits-window {
+    width: 76%;
+    margin-right: 1%;
+  }
+
+  .ldmac-last-window {
+    width: 65%;
+    margin-left: 3%;
+  }
+
+  .ldmac-polaroids {
+    display: none;
+  }
+
+}
+
+
+
+@media (max-width: 650px) {
+
+  .ldmac-wrap {
+    box-shadow: none;
+  }
+
+  .ldmac-menubar {
+    padding: 0 9px;
+  }
+
+  .ldmac-menu-left span:not(.ldmac-apple),
+  .ldmac-menu-right span:not(:last-child) {
+    display: none;
+  }
+
+  .ldmac-desktop {
+    min-height: auto;
+    padding: 18px 11px 90px;
+  }
+
+  .ldmac-polaroids {
+    display: none;
+  }
+
+  .ldmac-main-notes,
+  .ldmac-photobooth,
+  .ldmac-second-notes,
+  .ldmac-traits-window,
+  .ldmac-last-window {
+    width: 100%;
+    margin: 0 0 15px;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+  }
+
+  .ldmac-main-notes {
+    z-index: 1;
+  }
+
+  .ldmac-photobooth {
+    z-index: 1;
+  }
+
+  .ldmac-second-notes,
+  .ldmac-traits-window,
+  .ldmac-last-window {
+    z-index: 1;
+  }
+
+  .ldmac-notes-app {
+    grid-template-columns: 95px minmax(0, 1fr);
+  }
+
+  .ldmac-sidebar {
+    padding: 11px 6px;
+  }
+
+  .ldmac-sidebar-heading,
+  .ldmac-sidebar-active,
+  .ldmac-sidebar-item,
+  .ldmac-sidebar-tag {
+    padding: 6px 4px;
+  }
+
+  .ldmac-sidebar-heading strong {
+    font-size: 10px;
+  }
+
+  .ldmac-sidebar-preview {
+    padding: 5px;
+  }
+
+  .ldmac-note {
+    padding: 0 14px 25px;
+  }
+
+  .ldmac-note-toolbar {
+    margin: 0 -14px 16px;
+    gap: 13px;
+  }
+
+  .ldmac-note h1 {
+    font-size: 11px;
+  }
+
+  .ldmac-note p,
+  .ldmac-document p,
+  .ldmac-traits-text p,
+  .ldmac-last-content p {
+    font-size: 9px;
+    line-height: 1.8;
+  }
+
+  .ldmac-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ldmac-note-quote,
+  .ldmac-final-quote {
+    font-size: 12px;
+  }
+
+  .ldmac-photo-screen {
+    height: 260px;
+  }
+
+  .ldmac-document,
+  .ldmac-last-content {
+    padding: 23px 18px;
+  }
+
+  .ldmac-traits-layout {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .ldmac-traits-picture {
+    width: min(230px, 85%);
+    margin: 0 auto;
+  }
+
+  .ldmac-dock {
+    overflow: hidden;
+  }
+
+  .ldmac-dock span {
+    width: 35px;
+    height: 35px;
+    flex-basis: 35px;
+  }
+
+}
