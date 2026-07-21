@@ -166,7 +166,7 @@
 
 
 .ldmac-main-notes {
-  width: 68%;
+  width: 75%;
   margin-left: 4%;
   margin-right: auto;
   position: relative;
@@ -701,7 +701,7 @@
 
 .ldmac-polaroid-two {
   top: 125px;
-  left: 43px;
+  left: 10px;
   transform: rotate(8deg);
 }
 
