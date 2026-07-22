@@ -210,22 +210,29 @@
 }
 
 .myyouth-star-left {
+  position: absolute;
+  z-index: 7;
+
   top: 34%;
-  left: 0%;
+  left: -5%;
+
   width: 25%;
   height: 21%;
+
   background: #d5d5d8;
   transform: rotate(-15deg);
 }
 
-
 .myyouth-main-photo {
   position: absolute;
   z-index: 5;
+
   top: 25.7%;
   left: 6%;
+
   width: 88%;
   height: 31%;
+
   background-image:
     linear-gradient(
       rgba(0, 0, 0, 0.06),
@@ -236,6 +243,7 @@
   background-size: cover;
   background-position: center var(--myyouth-main-y, 45%);
   background-repeat: no-repeat;
+
   filter:
     grayscale(1)
     contrast(1.05);
