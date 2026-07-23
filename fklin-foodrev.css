@@ -86,18 +86,11 @@
   width: 40px;
   height: 40px;
   flex: 0 0 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.85);
   border-radius: 50%;
-  color: #fff;
-  font-family: "DM Serif Display", serif;
-  font-size: 15px;
-  background:linear-gradient(
-      145deg,
-      var(--fdpopup-main),
-      var(--fdpopup-dark)
-    );
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
 .fdpopup-brand-text {
@@ -285,7 +278,7 @@ label[for="fdpopup-photo-3"] {
 
 .fdpopup-send {
   display: inline-block;
-  font-size: 25px;
+  font-size: 27px;
 }
 
 .fdpopup-bookmark {
@@ -327,6 +320,8 @@ label[for="fdpopup-photo-3"] {
 .fdpopup-info-left {
   top: 115px;
   left: -70px;
+  position: absolute;
+  isolation: isolate;
 }
 
 .fdpopup-info-left::after {
@@ -334,11 +329,13 @@ label[for="fdpopup-photo-3"] {
   width: 31px;
   height: 31px;
   position: absolute;
+  z-index: 0;
   right: 10px;
   bottom: -10px;
   border-radius: 2px;
   background: var(--fdpopup-paper);
   transform: rotate(45deg);
+  pointer-events: none;
 }
 
 .fdpopup-info-right {
@@ -431,6 +428,9 @@ label[for="fdpopup-photo-3"] {
 }
 
 .fdpopup-score-list {
+  position: relative;
+  z-index: 2;
+
   margin-top: 12px;
   padding-top: 10px;
   border-top: 1px solid rgba(90, 54, 32, 0.1);
@@ -438,10 +438,12 @@ label[for="fdpopup-photo-3"] {
 
 .fdpopup-score-list div {
   padding: 3px 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+
   font-size: 13px;
 }
 
@@ -451,15 +453,6 @@ label[for="fdpopup-photo-3"] {
 
 .fdpopup-score-list b {
   color: var(--fdpopup-dark);
-}
-
-.fdpopup-quote {
-  margin: 10px 0 0;
-  position: relative;
-  z-index: 2;
-  color: #625249;
-  font-size: 12px;
-  line-height: 1.65;
 }
 
 .fdpopup-food-name {
