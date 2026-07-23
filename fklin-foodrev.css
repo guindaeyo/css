@@ -477,28 +477,6 @@ label[for="fdpopup-photo-3"] {
   line-height: 1.65;
 }
 
-.fdpopup-advice {
-  margin-top: 12px;
-  padding: 10px 11px;
-  border-left: 2px solid var(--fdpopup-main);
-  border-radius: 0 8px 8px 0;
-  background: #faf0f2;
-}
-
-.fdpopup-advice span {
-  display: block;
-  color: var(--fdpopup-dark);
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.fdpopup-advice p {
-  margin: 4px 0 0;
-  color: #67564b;
-  font-size: 12px;
-  line-height: 1.55;
-}
-
 .fdpopup-tags {
   position: relative;
   z-index: 2;
