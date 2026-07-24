@@ -90,7 +90,7 @@
   z-index: 5;
   height: 104px;
   margin-top: -50px;
-  padding-left: 34px;
+  padding-left: 20px;
   display: flex;
   align-items: flex-end;
 }
@@ -207,7 +207,7 @@
 
 
 .erw-identity {
-  padding: 21px 34px 0;
+  padding: 21px 20px 0;
 }
 
 .erw-display-name {
