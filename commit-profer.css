@@ -368,7 +368,7 @@
 }
 
 .erw-info-item small {
-  margin-bottom: -4px;
+  margin-bottom: -2px;
   color: #829174;
   font-size: 11px;
 }
@@ -447,7 +447,7 @@
 }
 
 .erw-side-detail > strong {
-  margin-top: -10px;
+  margin-top: -5px;
   color: #455a39;
   font-size: 14px;
   font-weight: 600;
