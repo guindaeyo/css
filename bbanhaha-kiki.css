@@ -120,10 +120,10 @@
   --ddsh-05-x: 0cqw;
   --ddsh-05-y: 0cqw;
   --ddsh-deco-x: 4.5cqw;
-  --ddsh-deco-y: 0cqw;
+  --ddsh-deco-y: -0.5cqw;
   --ddsh-deco-gap: 10px;
-  --ddsh-head-deco-w:190px;
-  --ddsh-head-deco-h:190px;
+  --ddsh-head-deco-w:170px;
+  --ddsh-head-deco-h:170px;
   position: relative;
   width: 100%;
   min-height: clamp(105px,16cqw,190px);
