@@ -109,9 +109,9 @@
   --ddsh-title-y: 0cqw;
   --ddsh-living-x: 7cqw;
   --ddsh-living-y: 0cqw;
-  --ddsh-room-x: -8cqw;
+  --ddsh-room-x: -12cqw;
   --ddsh-room-y: 0cqw;
-  --ddsh-number-x: -25cqw;
+  --ddsh-number-x: -22cqw;
   --ddsh-number-y: -1.3cqw;
   --ddsh-maple-x: -2cqw;
   --ddsh-maple-y: 2.5cqw;
@@ -119,9 +119,11 @@
   --ddsh-no-y: 1cqw;
   --ddsh-05-x: 0cqw;
   --ddsh-05-y: 0cqw;
-  --ddsh-deco-x: 7cqw;
+  --ddsh-deco-x: 6cqw;
   --ddsh-deco-y: 0cqw;
   --ddsh-deco-gap: 10px;
+  --ddsh-head-deco-w:190px;
+  --ddsh-head-deco-h:190px;
   position: relative;
   width: 100%;
   min-height: clamp(105px,16cqw,190px);
@@ -138,16 +140,19 @@
   overflow: visible;
   transform: translate(var(--ddsh-deco-x),calc(-50% + var(--ddsh-deco-y)));
 }
-.ddsh-ml-head-deco-img {
-  position: absolute;
-  inset: 0;
-  background-image: var(--ddsh-ml-head-deco);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: var(--ddsh-ml-head-deco-x) var(--ddsh-ml-head-deco-y);
-  transform: scale(var(--ddsh-ml-head-deco-zoom));
-  transform-origin: var(--ddsh-ml-head-deco-x) var(--ddsh-ml-head-deco-y);
-  pointer-events: none;
+.ddsh-ml-head-deco-img{
+  position:absolute;
+  width:var(--ddsh-head-deco-w,150px);
+  height:var(--ddsh-head-deco-h,150px);
+  left:50%;
+  top:50%;
+  background-image:var(--ddsh-ml-head-deco);
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:var(--ddsh-ml-head-deco-x) var(--ddsh-ml-head-deco-y);
+  transform:translate(-50%,-50%) scale(var(--ddsh-ml-head-deco-zoom));
+  transform-origin:center;
+  pointer-events:none;
 }
 .ddsh-ml-heading {
   position: absolute;
