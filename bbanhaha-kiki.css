@@ -17,7 +17,7 @@
 }
 .ddsh-ml-topline {
   min-height: 43px;
-  padding: 4px 10px 15px;
+  padding: 4px 10px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,58 +133,69 @@
   pointer-events: none;
 }
 .ddsh-ml-heading {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  top: 50%;
+  width: min(620px, 56vw);
   min-width: 0;
+  transform: translate(-50%, -50%);
 }
 .ddsh-ml-heading-small {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 11px;
-  margin-top: 30px;
+  margin-top: 0;
   color: #eee4da;
-  font-family:"Cinzel Decorative", serif;
+  font-family: "Cinzel Decorative", serif;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.07em;
 }
 .ddsh-ml-heading-small span:last-child {
   position: relative;
-  top: 23px;
-  left: -15px;
+  top: 15px;
+  left: 0;
 }
 .ddsh-ml-heading-title {
   position: relative;
-  min-height: 91px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  width: 100%;
+  min-height: 135px;
+  --ddsh-ml-living-x: -55px;
+  --ddsh-ml-living-y: 2px;
+  --ddsh-ml-room-x: 105px;
+  --ddsh-ml-room-y: 82px;
 }
 .ddsh-ml-script {
   position: absolute;
   z-index: 2;
-  top: -16px;
-  left: 80px;
+  top: var(--ddsh-ml-living-y);
+  left: calc(50% + var(--ddsh-ml-living-x));
   color: #f0e5d9;
   font-family: "Mea Culpa", cursive;
-  font-size:clamp(75px,13vw,112px);
+  font-size: clamp(75px, 8vw, 112px);
   font-weight: 400;
   line-height: 0.8;
-  transform:rotate(-5deg);
+  transform: translateX(-50%) rotate(-5deg);
   text-shadow: 0 0 17px rgba(142,13,22,0.45);
+  white-space: nowrap;
 }
 .ddsh-ml-room {
-  position: relative;
+  position: absolute;
   z-index: 3;
-  margin-left: 70px;
-  margin-top: 70px;
+  top: var(--ddsh-ml-room-y);
+  left: calc(50% + var(--ddsh-ml-room-x));
+  margin: 0;
   padding-bottom: 6px;
   color: #f1e9df;
   font-family: "Mea Culpa", cursive;
-  font-size:clamp(27px,5vw,42px);
+  font-size: clamp(27px, 3vw, 42px);
   font-weight: 400;
   line-height: 0.95;
   letter-spacing: -0.06em;
   white-space: nowrap;
+  transform: translateX(-50%);
 }
 .ddsh-ml-room::after {
   content: "";
@@ -673,7 +684,7 @@
   text-align: center;
 }
 .ddsh-revmus-credit {
-  top: -28px;
+  top: 5px;
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -718,7 +729,7 @@
   .ddsh-maple-living {width:100%;max-width:none;margin:0 auto;padding:0;}
   .ddsh-ml-topline {gap: 7px 10px; font-size: 7px;}
   .ddsh-ml-frame {
-    padding: 20px 26px 18px;
+    padding: 20px 20px 18px;
   }
   .ddsh-ml-header {
     min-height: 103px;
@@ -732,31 +743,35 @@
     width: 64px;
     height: 78px;
   }
+  .ddsh-ml-heading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 58%;
+    transform: translate(-50%, -50%);
+  }
   .ddsh-ml-heading-small {
     gap: 5px;
+    margin-top: 0;
     font-size: 5px;
   }
   .ddsh-ml-heading-title {
-    min-height: 72px;
+    min-height: 92px;
+    --ddsh-ml-living-x: -24px;
+    --ddsh-ml-living-y: 4px;
+    --ddsh-ml-room-x: 56px;
+    --ddsh-ml-room-y: 58px;
   }
   .ddsh-ml-script {
-    top: 0;
-    left: -1px;
-    font-size:
-      clamp(
-        56px,
-        19vw,
-        79px
-      );
+    top: var(--ddsh-ml-living-y);
+    left: calc(50% + var(--ddsh-ml-living-x));
+    font-size: clamp(56px, 13vw, 79px);
   }
   .ddsh-ml-room {
-    margin-left: 70px;
-    font-size:
-      clamp(
-        16px,
-        5.4vw,
-        26px
-      );
+    top: var(--ddsh-ml-room-y);
+    left: calc(50% + var(--ddsh-ml-room-x));
+    margin: 0;
+    font-size: clamp(16px, 4vw, 26px);
   }
   .ddsh-ml-number span {
     display: none;
@@ -877,17 +892,24 @@
     width: 47px;
     height: 65px;
   }
+  .ddsh-ml-heading {
+    width: 60%;
+  }
   .ddsh-ml-heading-small {
     display: none;
   }
   .ddsh-ml-heading-title {
-    min-height: 61px;
+    min-height: 72px;
+    --ddsh-ml-living-x: -18px;
+    --ddsh-ml-living-y: 5px;
+    --ddsh-ml-room-x: 43px;
+    --ddsh-ml-room-y: 47px;
   }
   .ddsh-ml-script {
     font-size: 53px;
   }
   .ddsh-ml-room {
-    margin-left: 57px;
+    margin: 0;
     font-size: 14px;
   }
   .ddsh-ml-number strong {
