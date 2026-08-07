@@ -4,18 +4,7 @@
   box-sizing: border-box;
 }
 
-.ddsh-maple-living {
-  width: 100%;
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 27px 18px 34px;
-  background:radial-gradient(circle at 50% 0%,rgba(142, 13, 22, 0.12),transparent 38%),var(--ddsh-ml-paper);
-  color: var(--ddsh-ml-text);
-  font-family: "Bai Jamjuree", sans-serif;
-  font-size: 15px;
-  line-height: 1.75;
-  overflow: hidden;
-}
+.ddsh-maple-living{width:100%;max-width:none;margin:30px auto;padding:27px 18px 34px;background:radial-gradient(circle at 50% 0%,rgba(142,13,22,0.12),transparent 38%),var(--ddsh-ml-paper);color:var(--ddsh-ml-text);font-family:"Bai Jamjuree",sans-serif;font-size:15px;line-height:1.75;overflow:hidden;}
 
 .ddsh-ml-topline {
   min-height: 43px;
@@ -134,7 +123,7 @@
   width: 150px;
   height: 150px;
   overflow: visible;
-  margin-left: 40px;
+  margin-left: 395px;
   margin-top: 5px;
 }
 
@@ -170,7 +159,7 @@
 .ddsh-ml-heading-small span:last-child {
   position: relative;
   top: 23px;   
-  left: -15px; 
+  left: -370px; 
 }
 
 .ddsh-ml-heading-title {
@@ -185,7 +174,7 @@
   position: absolute;
   z-index: 2;
   top: -16px;
-  left: 80px;
+  left: 430px;
   color: #f0e5d9;
   font-family: "Mea Culpa", cursive;
   font-size:clamp(75px,13vw,112px);
@@ -244,7 +233,7 @@
   font-weight: 700;
   line-height: 0.8;
   letter-spacing: -0.09em;
-  margin-right: 85px;
+  margin-right: 450px;
   margin-top: 40px;
 }
 
