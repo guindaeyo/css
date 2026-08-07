@@ -14,6 +14,7 @@
   font-size: 15px;
   line-height: 1.75;
   overflow: hidden;
+  container-type: inline-size;
 }
 .ddsh-ml-topline {
   min-height: 43px;
@@ -106,24 +107,16 @@
 .ddsh-ml-header {
   position: relative;
   width: 100%;
-  min-height: 180px;
+  min-height: clamp(105px,16cqw,190px);
   margin: 0;
-  --ddsh-ml-heading-w: 520px;
-  --ddsh-ml-heading-half: 260px;
-  --ddsh-ml-living-x: 55px;
-  --ddsh-ml-living-y: 18px;
-  --ddsh-ml-room-x: 350px;
-  --ddsh-ml-room-y: 98px;
-  --ddsh-ml-deco-w: 150px;
-  --ddsh-ml-deco-gap: 10px;
 }
 .ddsh-ml-head-deco {
   position: absolute;
   z-index: 5;
   top: 50%;
-  left: calc(50% - var(--ddsh-ml-heading-half) + var(--ddsh-ml-living-x) - var(--ddsh-ml-deco-w) - var(--ddsh-ml-deco-gap));
-  width: var(--ddsh-ml-deco-w);
-  height: var(--ddsh-ml-deco-w);
+  left: calc(50% - clamp(135px,21cqw,260px) - clamp(54px,10cqw,150px) - 10px);
+  width: clamp(54px,10cqw,150px);
+  height: clamp(54px,10cqw,150px);
   margin: 0;
   overflow: visible;
   transform: translateY(-50%);
@@ -144,14 +137,12 @@
   z-index: 6;
   top: 50%;
   left: 50%;
-  width: var(--ddsh-ml-heading-w);
-  height: 150px;
+  width: clamp(270px,42cqw,520px);
+  height: clamp(82px,12cqw,150px);
   min-width: 0;
   transform: translate(-50%,-50%);
 }
-.ddsh-ml-heading-small {
-  display: none;
-}
+.ddsh-ml-heading-small {display:none;}
 .ddsh-ml-heading-title {
   position: relative;
   width: 100%;
@@ -161,11 +152,11 @@
 .ddsh-ml-script {
   position: absolute;
   z-index: 2;
-  top: var(--ddsh-ml-living-y);
-  left: var(--ddsh-ml-living-x);
+  top: 8%;
+  left: 0;
   color: #f0e5d9;
   font-family: "Mea Culpa", cursive;
-  font-size: clamp(75px,8vw,112px);
+  font-size: clamp(53px,9cqw,112px);
   font-weight: 400;
   line-height: .8;
   transform: rotate(-5deg);
@@ -176,13 +167,13 @@
 .ddsh-ml-room {
   position: absolute;
   z-index: 3;
-  top: var(--ddsh-ml-room-y);
-  left: var(--ddsh-ml-room-x);
+  top: 64%;
+  left: 67%;
   margin: 0;
   padding-bottom: 6px;
   color: #f1e9df;
   font-family: "Mea Culpa", cursive;
-  font-size: clamp(27px,4vw,42px);
+  font-size: clamp(14px,3.2cqw,42px);
   font-weight: 400;
   line-height: .95;
   letter-spacing: -.06em;
@@ -200,42 +191,43 @@
 .ddsh-ml-number {
   position: absolute;
   z-index: 7;
-  top: 25px;
-  right: 85px;
-  width: 180px;
-  height: 125px;
+  top: 50%;
+  right: clamp(4px,5cqw,85px);
+  width: clamp(58px,14cqw,180px);
+  height: clamp(66px,10cqw,125px);
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 5px;
+  gap: clamp(1px,.4cqw,5px);
   white-space: nowrap;
+  transform: translateY(-50%);
 }
 .ddsh-ml-number::before {
   content: "MAPLE ROAD";
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 0;
   width: 100%;
   color: #eee4da;
   font-family: "Cinzel Decorative", serif;
-  font-size: 8px;
+  font-size: clamp(4px,.7cqw,8px);
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: .07em;
   text-align: center;
 }
 .ddsh-ml-number span {
-  margin: 0 0 52px 0;
+  margin: 0 0 42% 0;
   color: var(--ddsh-ml-main-light);
   font-family: "Cinzel Decorative",serif;
-  font-size: 8px;
+  font-size: clamp(4px,.7cqw,8px);
   font-weight: 700;
 }
 .ddsh-ml-number strong {
   margin: 0;
   color: #f2e9df;
   font-family: "Cinzel Decorative",serif;
-  font-size: clamp(65px,8vw,96px);
+  font-size: clamp(42px,7.5cqw,96px);
   font-weight: 700;
   line-height: .8;
   letter-spacing: -.09em;
@@ -740,64 +732,6 @@
   .ddsh-ml-frame {
     padding: 20px 20px 18px;
   }
-  .ddsh-ml-header {
-    min-height: 112px;
-    --ddsh-ml-heading-w: 300px;
-    --ddsh-ml-heading-half: 150px;
-    --ddsh-ml-living-x: 18px;
-    --ddsh-ml-living-y: 16px;
-    --ddsh-ml-room-x: 190px;
-    --ddsh-ml-room-y: 68px;
-    --ddsh-ml-deco-w: 64px;
-    --ddsh-ml-deco-gap: 6px;
-  }
-  .ddsh-ml-head-deco {
-    top: 50%;
-    left: calc(50% - var(--ddsh-ml-heading-half) + var(--ddsh-ml-living-x) - var(--ddsh-ml-deco-w) - var(--ddsh-ml-deco-gap));
-    width: var(--ddsh-ml-deco-w);
-    height: var(--ddsh-ml-deco-w);
-    transform: translateY(-50%);
-  }
-  .ddsh-ml-heading {
-    top: 50%;
-    left: 50%;
-    width: var(--ddsh-ml-heading-w);
-    height: 100px;
-    transform: translate(-50%,-50%);
-  }
-  .ddsh-ml-heading-small {display:none;}
-  .ddsh-ml-heading-title {height:100%;min-height:0;}
-  .ddsh-ml-script {
-    top: var(--ddsh-ml-living-y);
-    left: var(--ddsh-ml-living-x);
-    font-size: clamp(56px,13vw,79px);
-  }
-  .ddsh-ml-room {
-    top: var(--ddsh-ml-room-y);
-    left: var(--ddsh-ml-room-x);
-    margin: 0;
-    font-size: clamp(16px,5.4vw,26px);
-  }
-  .ddsh-ml-number {
-    top: 16px;
-    right: 8px;
-    width: 78px;
-    height: 82px;
-    gap: 2px;
-  }
-  .ddsh-ml-number::before {
-    top: 3px;
-    font-size: 5px;
-  }
-  .ddsh-ml-number span {
-    display: block;
-    margin: 0 0 35px 0;
-    font-size: 5px;
-  }
-  .ddsh-ml-number strong {
-    margin: 0;
-    font-size: clamp(46px,15vw,68px);
-  }
   .ddsh-ml-paper {
     padding:
       17px
@@ -893,60 +827,6 @@
   .ddsh-ml-frame {
     padding-left: 21px;
     padding-right: 21px;
-  }
-  .ddsh-ml-header {
-    min-height: 90px;
-    --ddsh-ml-heading-w: 210px;
-    --ddsh-ml-heading-half: 105px;
-    --ddsh-ml-living-x: 8px;
-    --ddsh-ml-living-y: 13px;
-    --ddsh-ml-room-x: 136px;
-    --ddsh-ml-room-y: 52px;
-    --ddsh-ml-deco-w: 47px;
-    --ddsh-ml-deco-gap: 4px;
-  }
-  .ddsh-ml-head-deco {
-    top: 50%;
-    left: calc(50% - var(--ddsh-ml-heading-half) + var(--ddsh-ml-living-x) - var(--ddsh-ml-deco-w) - var(--ddsh-ml-deco-gap));
-    width: var(--ddsh-ml-deco-w);
-    height: var(--ddsh-ml-deco-w);
-    transform: translateY(-50%);
-  }
-  .ddsh-ml-heading {
-    width: var(--ddsh-ml-heading-w);
-    height: 76px;
-  }
-  .ddsh-ml-heading-small {display:none;}
-  .ddsh-ml-heading-title {height:100%;min-height:0;}
-  .ddsh-ml-script {
-    top: var(--ddsh-ml-living-y);
-    left: var(--ddsh-ml-living-x);
-    font-size: 53px;
-  }
-  .ddsh-ml-room {
-    top: var(--ddsh-ml-room-y);
-    left: var(--ddsh-ml-room-x);
-    margin: 0;
-    font-size: 14px;
-  }
-  .ddsh-ml-number {
-    top: 13px;
-    right: 2px;
-    width: 54px;
-    height: 65px;
-    gap: 1px;
-  }
-  .ddsh-ml-number::before {
-    top: 1px;
-    font-size: 4px;
-    letter-spacing: .03em;
-  }
-  .ddsh-ml-number span {
-    margin-bottom: 27px;
-    font-size: 4px;
-  }
-  .ddsh-ml-number strong {
-    font-size: 42px;
   }
   .ddsh-ml-info-wrap {
     grid-template-columns:
