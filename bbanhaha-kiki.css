@@ -104,6 +104,9 @@
   bottom: 10px;
   transform: rotate(180deg);
 }
+
+.ddsh-ml-heading,.ddsh-ml-number{translate:var(--ddsh-head-group-x,0px) var(--ddsh-head-group-y,0px);}
+
 .ddsh-ml-header {
   --ddsh-title-x: 0cqw;
   --ddsh-title-y: 0cqw;
