@@ -42,7 +42,7 @@
 .ddsh-ml-frame {
   position: relative;
   width: 100%;
-  padding:25px 48px 22px;
+  padding:40px 48px 22px;
   background: radial-gradient(circle at 15% 10%,rgba(142, 13, 22, 0.18),transparent 28%),radial-gradient(circle at 90% 90%,rgba(142, 13, 22, 0.13),transparent 27%),var(--ddsh-ml-black);
   color: var(--ddsh-ml-paper);
   isolation: isolate;
@@ -105,6 +105,23 @@
   transform: rotate(180deg);
 }
 .ddsh-ml-header {
+  --ddsh-title-x: 0cqw;
+  --ddsh-title-y: 0cqw;
+  --ddsh-living-x: 7cqw;
+  --ddsh-living-y: 0cqw;
+  --ddsh-room-x: -8cqw;
+  --ddsh-room-y: 0cqw;
+  --ddsh-number-x: -25cqw;
+  --ddsh-number-y: -1.3cqw;
+  --ddsh-maple-x: -2cqw;
+  --ddsh-maple-y: 2.5cqw;
+  --ddsh-no-x: 1cqw;
+  --ddsh-no-y: 1cqw;
+  --ddsh-05-x: 0cqw;
+  --ddsh-05-y: 0cqw;
+  --ddsh-deco-x: 7cqw;
+  --ddsh-deco-y: 0cqw;
+  --ddsh-deco-gap: 10px;
   position: relative;
   width: 100%;
   min-height: clamp(105px,16cqw,190px);
@@ -114,12 +131,12 @@
   position: absolute;
   z-index: 5;
   top: 50%;
-  left: calc(50% - clamp(135px,21cqw,260px) - clamp(54px,10cqw,150px) - 10px);
+  left: calc(50% - clamp(135px,21cqw,260px) - clamp(54px,10cqw,150px) - var(--ddsh-deco-gap));
   width: clamp(54px,10cqw,150px);
   height: clamp(54px,10cqw,150px);
   margin: 0;
   overflow: visible;
-  transform: translateY(-50%);
+  transform: translate(var(--ddsh-deco-x),calc(-50% + var(--ddsh-deco-y)));
 }
 .ddsh-ml-head-deco-img {
   position: absolute;
@@ -140,7 +157,7 @@
   width: clamp(270px,42cqw,520px);
   height: clamp(82px,12cqw,150px);
   min-width: 0;
-  transform: translate(-50%,-50%);
+  transform: translate(calc(-50% + var(--ddsh-title-x)),calc(-50% + var(--ddsh-title-y)));
 }
 .ddsh-ml-heading-small {display:none;}
 .ddsh-ml-heading-title {
@@ -159,7 +176,7 @@
   font-size: clamp(53px,9cqw,112px);
   font-weight: 400;
   line-height: .8;
-  transform: rotate(-5deg);
+  transform: translate(var(--ddsh-living-x),var(--ddsh-living-y)) rotate(-5deg);
   transform-origin: left center;
   text-shadow: 0 0 17px rgba(142,13,22,.45);
   white-space: nowrap;
@@ -178,6 +195,7 @@
   line-height: .95;
   letter-spacing: -.06em;
   white-space: nowrap;
+  transform: translate(var(--ddsh-room-x),var(--ddsh-room-y));
 }
 .ddsh-ml-room::after {
   content: "";
@@ -200,7 +218,7 @@
   justify-content: center;
   gap: clamp(1px,.4cqw,5px);
   white-space: nowrap;
-  transform: translateY(-50%);
+  transform: translate(var(--ddsh-number-x),calc(-50% + var(--ddsh-number-y)));
 }
 .ddsh-ml-number::before {
   content: "MAPLE ROAD";
@@ -215,6 +233,7 @@
   line-height: 1.4;
   letter-spacing: .07em;
   text-align: center;
+  transform: translate(var(--ddsh-maple-x),var(--ddsh-maple-y));
 }
 .ddsh-ml-number span {
   margin: 0 0 42% 0;
@@ -222,6 +241,7 @@
   font-family: "Cinzel Decorative",serif;
   font-size: clamp(4px,.7cqw,8px);
   font-weight: 700;
+  transform: translate(var(--ddsh-no-x),var(--ddsh-no-y));
 }
 .ddsh-ml-number strong {
   margin: 0;
@@ -231,10 +251,11 @@
   font-weight: 700;
   line-height: .8;
   letter-spacing: -.09em;
+  transform: translate(var(--ddsh-05-x),var(--ddsh-05-y));
 }
 .ddsh-ml-paper {
   position: relative;
-  top: 30px;
+  top: 15px;
   z-index: 4;
   width: 100%;
   margin: 0;
