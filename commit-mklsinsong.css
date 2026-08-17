@@ -1034,7 +1034,7 @@
 
 
   .ddsh-vmac-emoji-one {
-    left: 7px;
+    left: 3px;
     font-size: 34px;
   }
 
@@ -1084,8 +1084,8 @@
 @media (hover: none) and (pointer: coarse) {
 
   .ddsh-vmac-emoji-one {
-    top: 18px !important;
-    left: 50% !important;
+    top: 5px !important;
+    left: 20% !important;
     right: auto !important;
     bottom: auto !important;
 
