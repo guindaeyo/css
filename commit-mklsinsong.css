@@ -1034,11 +1034,8 @@
 
 
   .ddsh-vmac-emoji-one {
-    top: 5px !important;
-    left: 50% !important;
-    right: auto !important;
-    font-size: 32px !important;
-    transform: translateX(-50%) rotate(-12deg) !important;
+    left: 7px;
+    font-size: 34px;
   }
 
 
@@ -1082,4 +1079,18 @@
     height: 23px;
   }
 
+}
+
+@media (max-width: 620px) {
+  .ddsh-vmac-emoji-one {
+    top: 15px !important;
+    left: 50% !important;
+    right: auto !important;
+
+    font-size: 32px !important;
+
+    transform:
+      translateX(-50%)
+      rotate(-12deg) !important;
+  }
 }
