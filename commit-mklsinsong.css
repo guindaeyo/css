@@ -699,11 +699,11 @@
 }
 
 .ddsh-vmac-notify {
-  min-width: 112px;
+  min-width: 120px;
   position: absolute;
   z-index: 17;
   top: 530px;
-  right: 90px;
+  right: 75px;
   display: flex;
   align-items: center;
   gap: 8px;
