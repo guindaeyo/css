@@ -1,0 +1,1082 @@
+.ddsh-vmac-fullbg,
+.ddsh-vmac-fullbg *,
+.ddsh-vmac,
+.ddsh-vmac * {
+  box-sizing: border-box;
+}
+
+.ddsh-vmac-fullbg {
+  width: 100%;
+  min-width: 0;
+  position: relative;
+  margin: 25px auto;
+  padding: 28px 0;
+  overflow: hidden;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.04),
+      rgba(0, 0, 0, 0.08)
+    ),
+    var(--ddsh-vmac-bg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ddsh-vmac {
+  width: min(800px, calc(100% - 30px));
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: "Inter", "Bai Jamjuree",sans-serif;
+  color: #252525;
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.03),
+      rgba(0, 0, 0, 0.06)
+    ),
+    var(--ddsh-vmac-inner-bg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  border-radius: 8px;
+  box-shadow:
+    0 18px 55px
+    rgba(0, 0, 0, 0.16),
+    0 3px 10px
+    rgba(0, 0, 0, 0.12);
+}
+
+
+.ddsh-vmac-menubar {
+  height: 31px;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  background: rgba(244, 244, 244, 0.92);
+  border-bottom:
+    1px solid
+    rgba(0, 0, 0, 0.16);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: #111;
+  font-size: 9px;
+  line-height: 1;
+}
+
+.ddsh-vmac-menu-left,
+.ddsh-vmac-menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.ddsh-vmac-menu-left {
+  gap: 13px;
+}
+
+.ddsh-vmac-menu-right {
+  gap: 9px;
+}
+
+.ddsh-vmac-menu-left strong {
+  font-weight: 600;
+}
+
+.ddsh-vmac-apple {
+  color: #111;
+  font-size: 11px;
+}
+
+.ddsh-vmac-desktop {
+  min-height: 880px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding:
+    52px
+    32px
+    115px;
+  background: transparent;
+}
+
+.ddsh-vmac-emoji {
+  position: absolute;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  filter:
+    drop-shadow(
+      0 4px 4px
+      rgba(0, 0, 0, 0.16)
+    );
+
+  user-select: none;
+  pointer-events: none;
+}
+
+.ddsh-vmac-emoji-one {
+  top: 60px;
+  left: 80px;
+  font-size: 47px;
+  transform:
+    rotate(-14deg);
+}
+
+.ddsh-vmac-emoji-two {
+  top: 320px;
+  right: 45px;
+  font-size: 49px;
+  transform:
+    rotate(13deg);
+}
+
+.ddsh-vmac-emoji-three {
+  top: 610px;
+  left: 20px;
+  font-size: 46px;
+  transform:
+    rotate(-10deg);
+}
+
+.ddsh-vmac-emoji-four {
+  right: 15px;
+  bottom: 80px;
+  font-size: 51px;
+  transform:
+    rotate(11deg);
+}
+
+.ddsh-vmac-finder {
+  width: 137px;
+  height: 305px;
+  position: absolute;
+  z-index: 1;
+  top: 28px;
+  left: 13px;
+  padding: 13px 12px;
+  overflow: hidden;
+  background:
+    rgba(239, 239, 239, 0.8);
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.62);
+  border-radius: 7px;
+  box-shadow:
+    0 12px 35px
+    rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(17px);
+  -webkit-backdrop-filter: blur(17px);
+
+  opacity: 0.82;
+}
+
+.ddsh-vmac-finder-top {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+.ddsh-vmac-finder-top span {
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+}
+
+.ddsh-vmac-finder-top span:nth-child(1) {
+  background: #fe5f57;
+}
+
+.ddsh-vmac-finder-top span:nth-child(2) {
+  background: #febc2e;
+}
+
+.ddsh-vmac-finder-top span:nth-child(3) {
+  background: #28c840;
+}
+
+.ddsh-vmac-finder-title {
+  margin-bottom: 8px;
+  color: #6f7075;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.ddsh-vmac-finder-title2 {
+  margin-top: 17px;
+}
+
+.ddsh-vmac-finder-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 7px 0;
+  color: #55565a;
+  font-size: 9px;
+}
+
+.ddsh-vmac-finder-item b {
+  width: 13px;
+  color: #7298bb;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ddsh-vmac-video-stage {
+  width: min(505px, 91%);
+  position: relative;
+  z-index: 10;
+  margin:
+    48px
+    auto
+    0;
+}
+
+.ddsh-vmac-song-head {
+  width:
+    calc(100% - 36px);
+  position: relative;
+  z-index: 3;
+  margin: -50px 0 11px 18px;
+  padding: 11px 15px 12px;
+  background:rgba(246, 246, 246, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 7px;
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.13);
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+}
+
+.ddsh-vmac-song-small {
+  margin-bottom: 4px;
+  color: #969696;
+  font-family:"Inter",sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.17em;
+}
+
+.ddsh-vmac-song-name {
+  color: #292929;
+  font-family:"Bai Jamjuree",sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.ddsh-vmac-song-artist {
+  margin-top: -3px;
+  color: #777;
+  font-family:"Bai Jamjuree",sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.ddsh-vmac-video-window {
+  width: 100%;
+  position: relative;
+  left: 15px;
+  margin: 0;
+  overflow: hidden;
+  background: #ececec;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  border-radius: 7px;
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.25), 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.ddsh-vmac-window-head {
+  height: 28px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(
+      #f8f8f8,
+      #dcdcdc
+    );
+
+  border-bottom:
+    1px solid #aaa;
+  color: #333;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.ddsh-vmac-window-dots {
+  position: absolute;
+  left: 9px;
+  display: flex;
+  gap: 5px;
+}
+
+.ddsh-vmac-window-dots i {
+  width: 8px;
+  height: 8px;
+  display: block;
+  border:
+    1px solid
+    rgba(0, 0, 0, 0.12);
+
+  border-radius: 50%;
+}
+
+.ddsh-vmac-window-dots i:nth-child(1) {
+  background: #ff5f57;
+}
+
+.ddsh-vmac-window-dots i:nth-child(2) {
+  background: #ffbd2e;
+}
+
+.ddsh-vmac-window-dots i:nth-child(3) {
+  background: #28c840;
+}
+
+.ddsh-vmac-video-area {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #171717;
+}
+
+.ddsh-vmac-video-area iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+
+.ddsh-vmac-video-bottom {
+  height: 48px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(
+      #f6f6f6,
+      #dddddd
+    );
+
+  border-top:
+    1px solid #c2c2c2;
+}
+
+.ddsh-vmac-bottom-left {
+  position: absolute;
+  left: 12px;
+  display: flex;
+  gap: 4px;
+  color: #a8a8a8;
+  font-size: 12px;
+}
+
+.ddsh-vmac-bottom-left span {
+  width: 16px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.ddsh-vmac-bottom-left .active {
+  color: #338ac6;
+}
+
+.ddsh-vmac-record {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e54c56;
+  border:
+    4px solid #f5f5f5;
+
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px
+    rgba(0, 0, 0, 0.16),
+    0 2px 3px
+    rgba(0, 0, 0, 0.13);
+}
+
+.ddsh-vmac-record svg {
+  width: 17px;
+  height: 17px;
+  fill: #fff;
+}
+
+.ddsh-vmac-effect {
+  position: absolute;
+  right: 14px;
+  padding:
+    4px
+    12px;
+  background:
+    linear-gradient(
+      #fff,
+      #e6e6e6
+    );
+
+  border:
+    1px solid #cfcfcf;
+  border-radius: 4px;
+  box-shadow:
+    0 1px 2px
+    rgba(0, 0, 0, 0.06);
+
+  color: #9a9a9a;
+  font-size: 8px;
+}
+
+.ddsh-vmac-photo {
+  position: absolute;
+  overflow: hidden;
+  background: #eee;
+  border:
+    1px solid
+    rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  box-shadow:
+    0 12px 28px
+    rgba(0, 0, 0, 0.2);
+}
+
+.ddsh-vmac-photo-one {
+  width: 184px;
+  z-index: 14;
+  top: 35px;
+  right: 22px;
+  transform:
+    rotate(1.2deg);
+}
+
+.ddsh-vmac-photo-two {
+  width: 173px;
+  z-index: 15;
+  top: 350px;
+  left: 20px;
+  transform:
+    rotate(-1.4deg);
+}
+
+.ddsh-vmac-photo-bar {
+  height: 22px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(
+      #f6f6f6,
+      #d9d9d9
+    );
+
+  border-bottom:
+    1px solid #aaa;
+  color: #404040;
+  font-size: 7px;
+}
+
+.ddsh-vmac-dots {
+  position: absolute;
+  left: 7px;
+  display: flex;
+  gap: 3px;
+}
+
+.ddsh-vmac-dots i {
+  width: 5px;
+  height: 5px;
+  display: block;
+  background: #bcbcbc;
+  border-radius: 50%;
+}
+
+.ddsh-vmac-photo img {
+  width: 100%;
+  height: 155px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ddsh-vmac-photo-two img {
+  height: 175px;
+}
+
+.ddsh-vmac-photo-info,
+.ddsh-vmac-photo-actions {
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:
+    0
+    8px;
+
+  background: #f4f4f4;
+  border-top:
+    1px solid #ddd;
+
+  color: #666;
+  font-size: 7px;
+}
+
+.ddsh-vmac-description {
+  width: min(620px, 90%);
+  position: relative;
+  z-index: 11;
+  margin: 10px auto 0;
+  overflow: hidden;
+  background:
+    rgba(248, 248, 248, 0.95);
+  border:
+    1px solid
+    rgba(0, 0, 0, 0.27);
+  border-radius: 7px;
+  box-shadow:
+    0 16px 34px
+    rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.ddsh-vmac-description-head {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:
+    11px
+    15px;
+  background:
+    linear-gradient(
+      #f9f9f9,
+      #e8e8e8
+    );
+
+  border-bottom:
+    1px solid #d0d0d0;
+}
+
+.ddsh-vmac-description-label {
+  margin-bottom: 2px;
+  color: #aaa;
+  font-size: 6px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.ddsh-vmac-description-title {
+  color: #464646;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ddsh-vmac-description-more {
+  color: #999;
+  font-size: 10px;
+}
+
+.ddsh-vmac-cover {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin:
+    17px
+    17px
+    0;
+
+  padding-bottom: 14px;
+  border-bottom:
+    1px solid #e2e2e2;
+}
+
+.ddsh-vmac-cover-icon {
+  width: 33px;
+  height: 33px;
+  flex: 0 0 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(
+      145deg,
+      #555,
+      #1d1d1d
+    );
+
+  border-radius: 6px;
+  box-shadow:
+    0 2px 5px
+    rgba(0, 0, 0, 0.15);
+  color: #fff;
+  font-size: 14px;
+}
+
+.ddsh-vmac-cover-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.ddsh-vmac-cover-info span {
+  color: #aaa;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.ddsh-vmac-cover-info strong {
+  margin-top: 5px;
+  color: #333;
+  font-family: "Bai Jamjuree",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.ddsh-vmac-cover-status {
+  padding:
+    4px
+    7px;
+  background: #e65b62;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 6px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.ddsh-vmac-description-text {
+  padding:
+    15px
+    18px
+    17px;
+  color: #555;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.ddsh-vmac-description-bottom {
+  min-height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:
+    0
+    15px;
+  background: #f1f1f1;
+  border-top:
+    1px solid #dadada;
+
+  color: #aaa;
+  font-size: 9px;
+}
+
+.ddsh-vmac-notify {
+  min-width: 112px;
+  position: absolute;
+  z-index: 17;
+  top: 530px;
+  right: 90px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding:
+    7px
+    10px;
+  background:
+    rgba(42, 42, 42, 0.78);
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.16);
+  border-radius: 7px;
+  box-shadow:
+    0 7px 15px
+    rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff;
+}
+
+.ddsh-vmac-notify-icon {
+  width: 19px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    rgba(255, 255, 255, 0.16);
+  border-radius: 5px;
+  font-size: 9px;
+}
+
+.ddsh-vmac-notify div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ddsh-vmac-notify strong {
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.ddsh-vmac-notify small {
+  margin-top: 1px;
+  color: #bcbcbc;
+  font-size: 7px;
+}
+
+.ddsh-vmac-dock {
+  position: absolute;
+  z-index: 40;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  padding: 7px 9px;
+  background: rgba(234, 234, 234, 0.58);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 13px;
+  box-shadow: 0 9px 26px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(17px);
+  -webkit-backdrop-filter: blur(17px);
+}
+
+.ddsh-vmac-dock-icon {
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(
+      145deg,
+      #fafafa,
+      #c7c7c7
+    );
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.55);
+  border-radius: 7px;
+  box-shadow:
+    0 2px 5px
+    rgba(0, 0, 0, 0.16);
+  color: #4b4b4b;
+  font-family:
+    Arial,
+    sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ddsh-vmac-dock-icon:nth-child(2) {
+  background:
+    linear-gradient(
+      145deg,
+      #f4b8d1,
+      #e678a5
+    );
+
+  color: #fff;
+}
+
+.ddsh-vmac-dock-icon:nth-child(3) {
+  background:
+    linear-gradient(
+      145deg,
+      #4fa9ef,
+      #216ec5
+    );
+  color: #fff;
+}
+
+.ddsh-vmac-dock-icon:nth-child(4) {
+  background:
+    linear-gradient(
+      145deg,
+      #898989,
+      #313131
+    );
+
+  color: #fff;
+}
+
+.ddsh-vmac-dock-icon:nth-child(5) {
+  background:
+    linear-gradient(
+      145deg,
+      #66b6e9,
+      #377eb6
+    );
+
+  color: #fff;
+}
+
+.ddsh-vmac-dock-icon:nth-child(6) {
+  background:
+    linear-gradient(
+      145deg,
+      #76c6ee,
+      #3584c5
+    );
+
+  color: #fff;
+}
+
+.ddsh-vmac-dock-icon:nth-child(7) {
+  background:
+    linear-gradient(
+      145deg,
+      #de67ad,
+      #7f5eda
+    );
+
+  color: #fff;
+}
+
+.ddsh-vmac-dock-icon:nth-child(8) {
+  background:
+    linear-gradient(
+      145deg,
+      #55d77d,
+      #1aa14e
+    );
+
+  color: #fff;
+}
+
+.ddsh-vmac-dock-icon:nth-child(9) {
+  background:
+    linear-gradient(
+      145deg,
+      #fff4ac,
+      #d6be4a
+    );
+
+  color: #705f14;
+}
+
+.ddsh-vmac-dock-icon:nth-child(10) {
+  background:
+    linear-gradient(
+      145deg,
+      #f17f63,
+      #d44131
+    );
+
+  color: #fff;
+}
+
+.ddsh-vmac-dock-separator {
+  width: 1px;
+  height: 28px;
+
+  margin:
+    0
+    2px;
+
+  background:
+    rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 620px) {
+
+  .ddsh-vmac-fullbg {
+    padding:
+      20px
+      0;
+  }
+
+
+  .ddsh-vmac {
+    width:
+      calc(100% - 20px);
+  }
+
+
+  .ddsh-vmac-menubar {
+    padding:
+      0
+      8px;
+
+    font-size: 7px;
+  }
+
+
+  .ddsh-vmac-menu-left {
+    gap: 7px;
+  }
+
+
+  .ddsh-vmac-menu-right {
+    gap: 5px;
+  }
+
+
+  .ddsh-vmac-menu-left span:nth-last-child(-n+3) {
+    display: none;
+  }
+
+
+  .ddsh-vmac-desktop {
+    min-height: 1000px;
+    padding:
+      50px
+      15px
+      105px;
+  }
+
+
+  .ddsh-vmac-finder {
+    width: 105px;
+    height: 275px;
+    left: -22px;
+    opacity: 0.65;
+  }
+
+
+  .ddsh-vmac-video-stage {
+    width: 91%;
+    margin-top: 48px;
+  }
+
+
+  .ddsh-vmac-song-head {
+    width:
+      calc(100% - 26px);
+
+    margin:
+      0
+      0
+      10px
+      13px;
+
+    padding:
+      9px
+      13px
+      10px;
+  }
+
+
+  .ddsh-vmac-song-name {
+    font-size: 15px;
+  }
+
+
+  .ddsh-vmac-song-artist {
+    font-size: 8px;
+  }
+
+
+  .ddsh-vmac-photo-one {
+    width: 135px;
+
+    right: -13px;
+  }
+
+
+  .ddsh-vmac-photo-one img {
+    height: 116px;
+  }
+
+
+  .ddsh-vmac-photo-two {
+    width: 130px;
+
+    top: 410px;
+    left: -16px;
+  }
+
+
+  .ddsh-vmac-photo-two img {
+    height: 132px;
+  }
+
+
+  .ddsh-vmac-description {
+    width: 88%;
+  }
+
+
+  .ddsh-vmac-notify {
+    top: 525px;
+    right: 5px;
+  }
+
+
+  .ddsh-vmac-emoji-one {
+    left: 7px;
+    font-size: 34px;
+  }
+
+
+  .ddsh-vmac-emoji-two {
+    right: 4px;
+    font-size: 36px;
+  }
+
+
+  .ddsh-vmac-emoji-three {
+    left: 5px;
+    font-size: 34px;
+  }
+
+
+  .ddsh-vmac-emoji-four {
+    right: 7px;
+    font-size: 38px;
+  }
+
+
+  .ddsh-vmac-dock {
+    max-width:
+      calc(100% - 20px);
+    gap: 4px;
+    padding:
+      6px
+      7px;
+  }
+
+
+  .ddsh-vmac-dock-icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+    font-size: 10px;
+  }
+
+
+  .ddsh-vmac-dock-separator {
+    height: 23px;
+  }
+
+}
