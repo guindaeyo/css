@@ -23,7 +23,6 @@
   position: relative;
 }
 
-
 .ddsh-hxf-name {
   width: 100%;
   margin: 0 auto 10px;
@@ -37,7 +36,7 @@
   line-height: 0.88;
 }
 
-.ddsh-hxf-name-onlyy,
+.ddsh-hxf-name-first,
 .ddsh-hxf-name-last {
   display: block;
   width: 100%;
@@ -48,6 +47,10 @@
 
 .ddsh-hxf-name-onlyy {
   font-size: min(9.1vw, 92.7px);
+}
+
+.ddsh-hxf-name-first {
+  font-size: min(9.1vw, 100px);
 }
 
 .ddsh-hxf-name-last {
