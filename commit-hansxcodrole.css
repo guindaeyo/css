@@ -212,163 +212,67 @@
 
 @media (max-width: 600px) {
 
-  .ddsh-hxf {
-    padding-top: 34px;
-    padding-bottom: 30px;
-  }
-
-  .ddsh-hxf-core {
-    width: 74%;
-  }
-
   .ddsh-hxf-name {
-    margin-bottom: 8px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 8px;
+    overflow: hidden;
   }
 
+  .ddsh-hxf-name-first,
+  .ddsh-hxf-name-last,
   .ddsh-hxf-name-onlyy {
-    font-size: min(9.1vw, 81.9px);
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
   }
 
   .ddsh-hxf-name-first {
-    font-size: min(9.1vw, 81px);
+    font-size: min(8.5vw, 58px);
   }
 
   .ddsh-hxf-name-last {
-    margin-top: 8px;
-    font-size: min(9.1vw, 81px);
+    margin-top: 6px;
+    font-size: min(8.5vw, 58px);
     white-space: nowrap;
   }
 
-  .ddsh-hxf-photo {
-    margin-top: -8px;
-    border-width: 3px;
-  }
-
-  .ddsh-hxf-burst {
-    width: 32%;
-    top: 7%;
-    left: -13%;
-  }
-
-  .ddsh-hxf-burst-text {
-    font-size: 17px;
-  }
-
-  .ddsh-hxf-side {
-    font-size: 16px;
-  }
-
-  .ddsh-hxf-side-top {
-    top: 9px;
-    right: -20px;
-  }
-
-  .ddsh-hxf-side-bottom {
-    bottom: 9px;
-    right: -20px;
-  }
-
-  .ddsh-hxf-title {
-    margin-top: 17px;
-    font-size: 31px;
-  }
-
-  .ddsh-hxf-role {
-    margin-top: 13px;
-    font-size: 19px;
-    line-height: 1.7;
-  }
-
-  .ddsh-hxf-note {
-    font-size: 16px;
-  }
-
-  .ddsh-hxf-bottom {
-    margin-top: 22px;
-  }
-
-  .ddsh-hxf-barcode {
-    width: 22%;
-    right: -13%;
+  .ddsh-hxf-name-onlyy {
+    font-size: min(8.5vw, 58px);
+    white-space: nowrap;
   }
 }
 
 
 @media (max-width: 420px) {
 
-  .ddsh-hxf {
-    padding-top: 30px;
-    padding-bottom: 28px;
+  .ddsh-hxf-name {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 8px;
+    overflow: hidden;
   }
 
-  .ddsh-hxf-core {
-    width: 76%;
-  }
-
+  .ddsh-hxf-name-first,
+  .ddsh-hxf-name-last,
   .ddsh-hxf-name-onlyy {
-    font-size: min(9.1vw, 81.9px);
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
   }
 
   .ddsh-hxf-name-first {
-    font-size: min(9.1vw, 81px);
+    font-size: min(8vw, 42px);
   }
 
   .ddsh-hxf-name-last {
-    margin-top: 6px;
-    font-size: min(9.1vw, 81px);
+    margin-top: 5px;
+    font-size: min(8vw, 42px);
     white-space: nowrap;
   }
 
-  .ddsh-hxf-photo {
-    margin-top: -8px;
-    border-width: 3px;
-  }
-
-  .ddsh-hxf-burst {
-    width: 32%;
-    top: 7%;
-    left: -13%;
-  }
-
-  .ddsh-hxf-burst-text {
-    font-size: 17px;
-  }
-
-  .ddsh-hxf-side {
-    font-size: 16px;
-  }
-
-  .ddsh-hxf-side-top {
-    top: 9px;
-    right: -20px;
-  }
-
-  .ddsh-hxf-side-bottom {
-    bottom: 9px;
-    right: -20px;
-  }
-
-  .ddsh-hxf-title {
-    margin-top: 17px;
-    font-size: 31px;
-  }
-
-  .ddsh-hxf-role {
-    margin-top: 13px;
-    font-size: 19px;
-    line-height: 1.7;
-  }
-
-  .ddsh-hxf-note {
-    font-size: 16px;
-  }
-
-  .ddsh-hxf-bottom {
-    margin-top: 22px;
-  }
-
-  .ddsh-hxf-barcode {
-    width: 22%;
-    right: -13%;
+  .ddsh-hxf-name-onlyy {
+    font-size: min(8vw, 42px);
+    white-space: nowrap;
   }
 }
