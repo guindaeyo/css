@@ -1,5 +1,13 @@
 @import url("https://db.onlinewebfonts.com/c/f39331695848f9ee87dbd4010d31aace?family=Neue+Kabel+W01+ExtraBold");
 
+@font-face {
+  font-family: "Cloud Loop";
+  src: url("https://guindaeyo.github.io/css/CloudLoop-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .ddsh-hxf,
 .ddsh-hxf * {
   box-sizing: border-box;
@@ -7,7 +15,7 @@
 
 .ddsh-hxf {
   width: 100%;
-  max-width: 736px;
+  max-width: 650px;
   margin: 0 auto;
   padding: 48px 0 40px;
   position: relative;
@@ -46,7 +54,7 @@
 }
 
 .ddsh-hxf-name-onlyy {
-  font-size: min(9.1vw, 92.7px);
+  font-size: min(9.1vw, 81.9px);
 }
 
 .ddsh-hxf-name-first {
@@ -55,7 +63,7 @@
 
 .ddsh-hxf-name-last {
   margin-top: 8px;
-  font-size: min(9.1vw, 90px);
+  font-size: min(9.1vw, 81px);
   white-space: nowrap;
 }
 
@@ -124,7 +132,7 @@
   z-index: 6;
   right: -28px;
   color: var(--ddsh-hxf-color, #000);
-  font-family: "Cloud Loop", "Prompt", sans-serif;
+  font-family: "Prompt", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
@@ -158,8 +166,8 @@
   width: 100%;
   margin-top: 13px;
   color: var(--ddsh-hxf-color, #000);
-  font-family: "Cloud Loop", "Prompt", sans-serif;
-  font-size: 16px;
+  font-family: "Cloud Loop", sans-serif;
+  font-size: 19px;
   font-weight: 400;
   line-height: 1.7;
   text-align: justify;
@@ -182,7 +190,7 @@
   color: var(--ddsh-hxf-color, #000);
   font-family: "Prompt", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.2;
 }
 
