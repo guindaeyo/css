@@ -217,10 +217,9 @@
 .ddsh-hxf-name{width:100%;max-width:100%;margin:0 auto 10px;align-items:center;}
 .ddsh-hxf-name-first,.ddsh-hxf-name-last,.ddsh-hxf-name-onlyy{display:block;width:100%;max-width:100%;text-align:center;box-sizing:border-box;}
 
-.ddsh-hxf-name-first,.ddsh-hxf-name-last{font-size:min(15cqw,81px);}
+.ddsh-hxf-name-first,.ddsh-hxf-name-last{font-size:min(16cqw,81px);}
 .ddsh-hxf-name-last{margin-top:8px;white-space:nowrap;}
-.ddsh-hxf-name-onlyy{font-size:min(15cqw,81.9px);white-space:nowrap;}
-
+.ddsh-hxf-name-onlyy{font-size:min(16cqw,81.9px);white-space:nowrap;}
 .ddsh-hxf-photo{margin-top:-8px;border-width:3px;}
 .ddsh-hxf-burst{width:32%;top:7%;left:-13%;}
 .ddsh-hxf-burst-text{font-size:17px;}
@@ -237,13 +236,11 @@
 @media (max-width:600px){
 .ddsh-hxf{padding-top:34px;padding-bottom:30px;}
 .ddsh-hxf-core{width:74%;container-type:inline-size;}
-
 .ddsh-hxf-name{width:100%;max-width:100%;margin:0 auto 8px;align-items:center;}
 .ddsh-hxf-name-first,.ddsh-hxf-name-last,.ddsh-hxf-name-onlyy{display:block;width:100%;max-width:100%;text-align:center;box-sizing:border-box;}
-
-.ddsh-hxf-name-first,.ddsh-hxf-name-last{font-size:15cqw;}
+.ddsh-hxf-name-first,.ddsh-hxf-name-last{font-size:16cqw;}
 .ddsh-hxf-name-last{margin-top:6px;white-space:nowrap;}
-.ddsh-hxf-name-onlyy{font-size:15cqw;white-space:nowrap;}
+.ddsh-hxf-name-onlyy{font-size:16cqw;white-space:nowrap;}
 
 .ddsh-hxf-photo{margin-top:-8px;border-width:3px;}
 .ddsh-hxf-burst{width:32%;top:7%;left:-13%;}
@@ -265,9 +262,9 @@
 .ddsh-hxf-name{width:100%;max-width:100%;margin:0 auto 7px;align-items:center;}
 .ddsh-hxf-name-first,.ddsh-hxf-name-last,.ddsh-hxf-name-onlyy{display:block;width:100%;max-width:100%;text-align:center;box-sizing:border-box;}
 
-.ddsh-hxf-name-first,.ddsh-hxf-name-last{font-size:15cqw;}
+.ddsh-hxf-name-first,.ddsh-hxf-name-last{font-size:16cqw;}
 .ddsh-hxf-name-last{margin-top:5px;white-space:nowrap;}
-.ddsh-hxf-name-onlyy{font-size:15cqw;white-space:nowrap;}
+.ddsh-hxf-name-onlyy{font-size:16cqw;white-space:nowrap;}
 
 .ddsh-hxf-photo{margin-top:-8px;border-width:2px;}
 .ddsh-hxf-burst{width:32%;top:7%;left:-13%;}
