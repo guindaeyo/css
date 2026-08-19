@@ -225,85 +225,150 @@
     margin-bottom: 8px;
   }
 
-  .ddsh-hxf-name-first,
-  .ddsh-hxf-name-last {
-    font-size: min(9.2vw, 67px);
+  .ddsh-hxf-name-onlyy {
+    font-size: min(9.1vw, 81.9px);
+  }
+
+  .ddsh-hxf-name-first {
+    font-size: min(9.1vw, 81px);
   }
 
   .ddsh-hxf-name-last {
-    margin-top: 5px;
+    margin-top: 8px;
+    font-size: min(9.1vw, 81px);
+    white-space: nowrap;
   }
 
   .ddsh-hxf-photo {
-    border-width: 2px;
+    margin-top: -8px;
+    border-width: 3px;
+  }
+
+  .ddsh-hxf-burst {
+    width: 32%;
+    top: 7%;
+    left: -13%;
   }
 
   .ddsh-hxf-burst-text {
-    font-size: 13px;
+    font-size: 17px;
   }
 
   .ddsh-hxf-side {
-    right: -23px;
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .ddsh-hxf-side-top {
-    top: 7px;
+    top: 9px;
+    right: -20px;
   }
 
   .ddsh-hxf-side-bottom {
-    bottom: 7px;
+    bottom: 9px;
+    right: -20px;
   }
 
   .ddsh-hxf-title {
-    margin-top: 14px;
-    font-size: 26px;
+    margin-top: 17px;
+    font-size: 31px;
   }
 
   .ddsh-hxf-role {
-    margin-top: 10px;
-    font-size: 16px;
-    line-height: 1.65;
+    margin-top: 13px;
+    font-size: 19px;
+    line-height: 1.7;
   }
 
   .ddsh-hxf-note {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .ddsh-hxf-bottom {
-    margin-top: 18px;
+    margin-top: 22px;
+  }
+
+  .ddsh-hxf-barcode {
+    width: 22%;
+    right: -13%;
   }
 }
 
 
 @media (max-width: 420px) {
+
+  .ddsh-hxf {
+    padding-top: 30px;
+    padding-bottom: 28px;
+  }
+
   .ddsh-hxf-core {
     width: 76%;
   }
 
-  .ddsh-hxf-name-first,
-  .ddsh-hxf-name-last {
-    font-size: min(9vw, 52px);
+  .ddsh-hxf-name-onlyy {
+    font-size: min(9.1vw, 81.9px);
   }
 
-  .ddsh-hxf-title {
-    font-size: 23px;
+  .ddsh-hxf-name-first {
+    font-size: min(9.1vw, 81px);
+  }
+
+  .ddsh-hxf-name-last {
+    margin-top: 6px;
+    font-size: min(9.1vw, 81px);
+    white-space: nowrap;
+  }
+
+  .ddsh-hxf-photo {
+    margin-top: -8px;
+    border-width: 3px;
   }
 
   .ddsh-hxf-burst {
-    width: 34%;
+    width: 32%;
+    top: 7%;
+    left: -13%;
   }
 
   .ddsh-hxf-burst-text {
-    font-size: 11px;
+    font-size: 17px;
   }
 
   .ddsh-hxf-side {
+    font-size: 16px;
+  }
+
+  .ddsh-hxf-side-top {
+    top: 9px;
     right: -20px;
-    font-size: 11px;
+  }
+
+  .ddsh-hxf-side-bottom {
+    bottom: 9px;
+    right: -20px;
+  }
+
+  .ddsh-hxf-title {
+    margin-top: 17px;
+    font-size: 31px;
+  }
+
+  .ddsh-hxf-role {
+    margin-top: 13px;
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  .ddsh-hxf-note {
+    font-size: 16px;
+  }
+
+  .ddsh-hxf-bottom {
+    margin-top: 22px;
   }
 
   .ddsh-hxf-barcode {
-    width: 24%;
+    width: 22%;
+    right: -13%;
   }
 }
