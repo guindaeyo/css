@@ -37,7 +37,7 @@
   line-height: 0.88;
 }
 
-.ddsh-hxf-name-first,
+.ddsh-hxf-name-onlyy,
 .ddsh-hxf-name-last {
   display: block;
   width: 100%;
@@ -46,14 +46,8 @@
   word-break: normal;
 }
 
-.ddsh-hxf-name-first {
-  font-size: min(9.1vw, 100px);
-}
-
-.ddsh-hxf-name-last {
-  margin-top: 8px;
-  font-size: min(9.1vw, 90px);
-  white-space: nowrap;
+.ddsh-hxf-name-onlyy {
+  font-size: min(9.1vw, 92.7px);
 }
 
 .ddsh-hxf-photo {
