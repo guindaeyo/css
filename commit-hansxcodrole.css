@@ -210,7 +210,43 @@
   background-repeat: no-repeat;
 }
 
+
+@media (min-width: 601px) and (max-width: 1366px) {
+
+  .ddsh-hxf-name {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 10px;
+    overflow: visible;
+  }
+
+  .ddsh-hxf-name-first,
+  .ddsh-hxf-name-last,
+  .ddsh-hxf-name-onlyy {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .ddsh-hxf-name-first {
+    font-size: 67px;
+  }
+
+  .ddsh-hxf-name-last {
+    margin-top: 8px;
+    font-size: 67px;
+    white-space: nowrap;
+  }
+
+  .ddsh-hxf-name-onlyy {
+    font-size: 67px;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 600px) {
+
   .ddsh-hxf {
     padding-top: 34px;
     padding-bottom: 30px;
@@ -224,7 +260,7 @@
     width: 100%;
     max-width: 100%;
     margin: 0 auto 8px;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .ddsh-hxf-name-first,
@@ -291,7 +327,6 @@
     line-height: 1.7;
   }
 
-
   .ddsh-hxf-bottom {
     margin-top: 22px;
   }
@@ -306,8 +341,8 @@
   }
 }
 
-
 @media (max-width: 420px) {
+
   .ddsh-hxf {
     padding-top: 30px;
     padding-bottom: 28px;
@@ -321,7 +356,7 @@
     width: 100%;
     max-width: 100%;
     margin: 0 auto 8px;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .ddsh-hxf-name-first,
