@@ -31,8 +31,16 @@
   position: relative;
 }
 
+.ddsh-hxf-core {
+  width: 72%;
+  margin: 0 auto;
+  position: relative;
+  container-type: inline-size;
+}
+
 .ddsh-hxf-name {
   width: 100%;
+  max-width: 100%;
   margin: 0 auto 10px;
   display: flex;
   flex-direction: column;
@@ -45,26 +53,28 @@
 }
 
 .ddsh-hxf-name-first,
-.ddsh-hxf-name-last {
+.ddsh-hxf-name-last,
+.ddsh-hxf-name-onlyy {
   display: block;
   width: 100%;
   max-width: 100%;
-  overflow-wrap: break-word;
+  text-align: center;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
   word-break: normal;
 }
 
-.ddsh-hxf-name-onlyy {
-  font-size: min(9.1vw, 81.9px);
-}
-
-.ddsh-hxf-name-first {
-  font-size: min(9.1vw, 81px);
+.ddsh-hxf-name-first,
+.ddsh-hxf-name-last {
+  font-size: min(17.3cqw, 81px);
 }
 
 .ddsh-hxf-name-last {
   margin-top: 8px;
-  font-size: min(9.1vw, 81px);
-  white-space: nowrap;
+}
+
+.ddsh-hxf-name-onlyy {
+  font-size: min(17.5cqw, 81.9px);
 }
 
 .ddsh-hxf-photo {
