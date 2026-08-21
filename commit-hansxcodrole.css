@@ -287,7 +287,7 @@
 .ddsh-hxf-bottom{margin-top:22px;}
 .ddsh-hxf-note{font-size:16px;}
 .ddsh-hxf-barcode{width:22%;right:-13%;}
-.ddshopfz-credit{--ddshopfz-credit-y:-10px;width:100%;min-height:25px;top:-40px;padding:7px 12px 8px;}
+.ddshopfz-credit{--ddshopfz-credit-y:0px;width:100%;min-height:25px;top:0;margin-top:0;padding:7px 12px 8px;}
 .ddshopfz-credit span{width:11px;height:10px;font-size:7px;line-height:10px;}
 .ddshopfz-credit span::before{width:135px;}
 .ddshopfz-credit span:hover{width:135px;}
@@ -311,7 +311,7 @@
 .ddsh-hxf-bottom{margin-top:22px;}
 .ddsh-hxf-note{font-size:16px;}
 .ddsh-hxf-barcode{width:22%;right:-13%;}
-.ddshopfz-credit{--ddshopfz-credit-y:-8px;width:100%;min-height:25px;top:-32px;padding:7px 12px 8px;}
+.ddshopfz-credit{--ddshopfz-credit-y:0px;width:100%;min-height:25px;top:0;margin-top:0;padding:7px 12px 8px;}
 .ddshopfz-credit span{width:11px;height:10px;font-size:7px;line-height:10px;}
 .ddshopfz-credit span::before{width:135px;}
 .ddshopfz-credit span:hover{width:135px;}
@@ -335,7 +335,7 @@
 .ddsh-hxf-bottom{margin-top:20px;}
 .ddsh-hxf-note{font-size:14px;}
 .ddsh-hxf-barcode{width:22%;right:-13%;}
-.ddshopfz-credit{--ddshopfz-credit-y:-6px;width:100%;min-height:22px;top:-26px;padding:6px 10px 7px;}
+.ddshopfz-credit{--ddshopfz-credit-y:0px;width:100%;min-height:22px;top:0;margin-top:0;padding:6px 10px 7px;}
 .ddshopfz-credit span{width:11px;height:10px;font-size:7px;line-height:10px;}
 .ddshopfz-credit span::before{width:135px;}
 .ddshopfz-credit span:hover{width:135px;}
