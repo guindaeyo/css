@@ -9,7 +9,7 @@
   width: 100%;
   min-width: 0;
   position: relative;
-  margin: 25px auto;
+  margin: 25px auto 0px;
   padding: 28px 0;
   overflow: hidden;
   background-image:
@@ -908,23 +908,22 @@
     rgba(0, 0, 0, 0.22);
 }
 
-.fdreview-credit {
-  --fdreview-credit-y: -10px;
-
+.ddshopfz-credit {
   width: 100%;
   min-height: 25px;
-  top:-30px;
-  padding: 7px 12px 8px;
+  margin: -5px auto 0;
+  padding: 0px 12px 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  transform: translateY(var(--fdreview-credit-y));
+  position: static;
+  top: auto;
+  transform: none;
   background: transparent;
   font-family: Arial, sans-serif;
 }
 
-.fdreview-credit span {
+.ddshopfz-credit span {
   width: 11px;
   height: 10px;
   display: block;
@@ -944,14 +943,14 @@
     color 0.25s ease;
 }
 
-.fdreview-credit span::before {
-  content: "✝ deepdeepsleepfranklin";
+.ddshopfz-credit span::before {
+  content: "✦ deepdeepsleepfranklin";
   display: block;
   width: 135px;
   font-style: italic;
 }
 
-.fdreview-credit span:hover {
+.ddshopfz-credit span:hover {
   width: 135px;
   color: rgba(215, 215, 215, 0.92);
 }
