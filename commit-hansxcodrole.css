@@ -220,13 +220,59 @@
   background-repeat: no-repeat;
 }
 
+.ddshopfz-credit {
+  --ddshopfz-credit-y: -10px;
+
+  width: 100%;
+  min-height: 25px;
+  top: -5px;
+  padding: 7px 12px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translateY(var(--ddshopfz-credit-y));
+  background: transparent;
+  font-family: Arial, sans-serif;
+}
+
+.ddshopfz-credit span {
+  width: 11px;
+  height: 10px;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  color: rgba(185, 185, 185, 0.58);
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.7px;
+  text-align: left;
+  cursor: help;
+  user-select: none;
+  -webkit-user-select: none;
+  transition:
+    width 0.35s ease,
+    color 0.25s ease;
+}
+
+.ddshopfz-credit span::before {
+  content: "✝ deepdeepsleepfranklin";
+  display: block;
+  width: 135px;
+  font-style: italic;
+}
+
+.ddshopfz-credit span:hover {
+  width: 135px;
+  color: rgba(215, 215, 215, 0.92);
+}
+
 @media (min-width:601px) and (max-width:1366px){
 .ddsh-hxf{padding-top:48px;padding-bottom:40px;}
 .ddsh-hxf-core{width:72%;container-type:inline-size;}
-
 .ddsh-hxf-name{width:100%;max-width:100%;margin:0 auto 10px;align-items:center;}
 .ddsh-hxf-name-first,.ddsh-hxf-name-last,.ddsh-hxf-name-onlyy{display:block;width:100%;max-width:100%;text-align:center;box-sizing:border-box;}
-
 .ddsh-hxf-name-first,.ddsh-hxf-name-last{font-size:min(16.5cqw,81px);}
 .ddsh-hxf-name-last{margin-top:8px;white-space:nowrap;}
 .ddsh-hxf-name-onlyy{font-size:min(16.5cqw,81.9px);white-space:nowrap;}
@@ -241,8 +287,11 @@
 .ddsh-hxf-bottom{margin-top:22px;}
 .ddsh-hxf-note{font-size:16px;}
 .ddsh-hxf-barcode{width:22%;right:-13%;}
+.ddshopfz-credit{--ddshopfz-credit-y:-10px;width:100%;min-height:25px;top:-40px;padding:7px 12px 8px;}
+.ddshopfz-credit span{width:11px;height:10px;font-size:7px;line-height:10px;}
+.ddshopfz-credit span::before{width:135px;}
+.ddshopfz-credit span:hover{width:135px;}
 }
-
 @media (max-width:600px){
 .ddsh-hxf{padding-top:34px;padding-bottom:30px;}
 .ddsh-hxf-core{width:74%;container-type:inline-size;}
@@ -251,7 +300,6 @@
 .ddsh-hxf-name-first,.ddsh-hxf-name-last{font-size:16.5cqw;}
 .ddsh-hxf-name-last{margin-top:6px;white-space:nowrap;}
 .ddsh-hxf-name-onlyy{font-size:16.5cqw;white-space:nowrap;}
-
 .ddsh-hxf-photo{margin-top:-8px;border-width:3px;}
 .ddsh-hxf-burst{width:32%;top:7%;left:-13%;}
 .ddsh-hxf-burst-text{font-size:17px;}
@@ -263,19 +311,19 @@
 .ddsh-hxf-bottom{margin-top:22px;}
 .ddsh-hxf-note{font-size:16px;}
 .ddsh-hxf-barcode{width:22%;right:-13%;}
+.ddshopfz-credit{--ddshopfz-credit-y:-8px;width:100%;min-height:25px;top:-32px;padding:7px 12px 8px;}
+.ddshopfz-credit span{width:11px;height:10px;font-size:7px;line-height:10px;}
+.ddshopfz-credit span::before{width:135px;}
+.ddshopfz-credit span:hover{width:135px;}
 }
-
 @media (max-width:420px){
 .ddsh-hxf{padding-top:30px;padding-bottom:28px;}
 .ddsh-hxf-core{width:76%;container-type:inline-size;}
-
 .ddsh-hxf-name{width:100%;max-width:100%;margin:0 auto 7px;align-items:center;}
 .ddsh-hxf-name-first,.ddsh-hxf-name-last,.ddsh-hxf-name-onlyy{display:block;width:100%;max-width:100%;text-align:center;box-sizing:border-box;}
-
 .ddsh-hxf-name-first,.ddsh-hxf-name-last{font-size:16.5cqw;}
 .ddsh-hxf-name-last{margin-top:5px;white-space:nowrap;}
 .ddsh-hxf-name-onlyy{font-size:16.5cqw;white-space:nowrap;}
-
 .ddsh-hxf-photo{margin-top:-8px;border-width:2px;}
 .ddsh-hxf-burst{width:32%;top:7%;left:-13%;}
 .ddsh-hxf-burst-text{font-size:14px;}
@@ -287,4 +335,8 @@
 .ddsh-hxf-bottom{margin-top:20px;}
 .ddsh-hxf-note{font-size:14px;}
 .ddsh-hxf-barcode{width:22%;right:-13%;}
+.ddshopfz-credit{--ddshopfz-credit-y:-6px;width:100%;min-height:22px;top:-26px;padding:6px 10px 7px;}
+.ddshopfz-credit span{width:11px;height:10px;font-size:7px;line-height:10px;}
+.ddshopfz-credit span::before{width:135px;}
+.ddshopfz-credit span:hover{width:135px;}
 }
